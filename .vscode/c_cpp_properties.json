@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "/opt/blocksds/core/libs/dswifi/include/",
+                "/opt/blocksds/core/libs/libnds/include/",
+                "/opt/blocksds/core/libs/libteak/include/",
+                "/opt/blocksds/core/libs/libxm7/include/",
+                "/opt/blocksds/core/libs/maxmod/include/",
+                "/opt/blocksds/external/nflib/include/",
+                "/opt/blocksds/external/nitro-engine/include/",
+                "${default}"
+            ],
+            "defines": [],
+            "compilerPath": "/opt/wonderful/toolchain/gcc-arm-none-eabi/bin/arm-none-eabi-gcc",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-arm"
+        }
+    ],
+    "version": 4
+}
