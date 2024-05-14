@@ -10,7 +10,6 @@
 #include <sys/socket.h>
 #include <nds.h>
 #include <dswifi9.h>
-#include "main.h"
 
 // This function sends an HTTP request to the specified URL and prints the
 // response from the server.
@@ -168,6 +167,13 @@
 //     printf("Website: %s%s", url, path);
 // }
 
+// dumps recv values
+void dumpSockOutput(int s)
+{
+    char* junkbuf[128];
+    recv(s, junkbuf, sizeof(junkbuf), 0);
+}
+
 int initOBD()
 {
 
@@ -190,13 +196,20 @@ int initOBD()
     struct sockaddr_in sain;
     sain.sin_family = AF_INET;
     sain.sin_port = htons(35000);
-    sain.sin_addr.s_addr = "192.168.0.10";
+    sain.sin_addr.s_addr = 0x0A00A8C0UL;
+
+    unsigned long ip = 0x0A00A8C0UL;
+    printf("IP Address: %ld.%ld.%ld.%ld\n", (ip >> 0) & 0xFF, (ip >> 8) & 0xFF,
+                                            (ip >> 16) & 0xFF, (ip >> 24) & 0xFF);
+
     if (connect(s, (struct sockaddr *)&sain, sizeof(sain)) == -1)
     {
         printf("failed to connect socket.");
         close(s);
         return -1;
     }
+
+    
 
     // reset the OBD reader
     send(s, "ATZ\r", 5, 0);
@@ -223,19 +236,14 @@ int initOBD()
     send(s, "ATSP0\r", 7, 0);
     dumpSockOutput(s);
 
-    send(s, "0101\r", 6, 0);
+    send(s, "0100\r", 6, 0);
     dumpSockOutput(s);
 
     return s;
 }
 
 
-// dumps recv values
-void dumpSockOutput(int s)
-{
-    char* junkbuf[128];
-    recv(s, junkbuf, sizeof(junkbuf), 0);
-}
+
 int main(int argc, char *argv[])
 {
     consoleDemoInit();
