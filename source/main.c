@@ -196,8 +196,10 @@ int initOBD()
     struct sockaddr_in sain;
     sain.sin_family = AF_INET;
     sain.sin_port = htons(35000);
+    // this is the ip 192.168.0.10, its in this format u8.u8.u8.u8, it is reversed too, C0 is 192.
     sain.sin_addr.s_addr = 0x0A00A8C0UL;
 
+    // print out the ip
     unsigned long ip = 0x0A00A8C0UL;
     printf("IP Address: %ld.%ld.%ld.%ld\n", (ip >> 0) & 0xFF, (ip >> 8) & 0xFF,
                                             (ip >> 16) & 0xFF, (ip >> 24) & 0xFF);
