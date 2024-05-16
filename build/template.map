@@ -1908,7 +1908,7 @@ END GROUP
 .init
  *(SORT_NONE(.init))
 
-.text           0x02000b18     0xbaa0
+.text           0x02000b18     0xba70
  *(EXCLUDE_FILE(*.twl* *.vectors* *.itcm*) .text)
  .text          0x02000b18       0x5c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(spinlock.s.o)
                 0x02000b18                SLasm_Acquire
@@ -1978,965 +1978,964 @@ END GROUP
  .text.initOBD  0x020016ac      0x120 build/source/main.c.o
                 0x020016ac                initOBD
  .text.startup.main
-                0x020017cc       0x84 build/source/main.c.o
+                0x020017cc       0x58 build/source/main.c.o
                 0x020017cc                main
  .text.Wifi_Interface_Init
-                0x02001850       0x48 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
-                0x02001850                Wifi_Interface_Init
+                0x02001824       0x48 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
+                0x02001824                Wifi_Interface_Init
  .text.arm9_synctoarm7
-                0x02001898        0xc /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
-                0x02001898                arm9_synctoarm7
+                0x0200186c        0xc /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
+                0x0200186c                arm9_synctoarm7
  .text.Wifi_TransmitFunction
-                0x020018a4      0x3e4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
-                0x020018a4                Wifi_TransmitFunction
+                0x02001878      0x3e4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
+                0x02001878                Wifi_TransmitFunction
  .text.sgIP_IntrWaitEvent
-                0x02001c88        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
-                0x02001c88                sgIP_IntrWaitEvent
+                0x02001c5c        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
+                0x02001c5c                sgIP_IntrWaitEvent
  .text.wHeapAlloc
-                0x02001c8c       0xcc /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
-                0x02001c8c                wHeapAlloc
+                0x02001c60       0xcc /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
+                0x02001c60                wHeapAlloc
  .text.sgIP_malloc
-                0x02001d58        0x8 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
-                0x02001d58                sgIP_malloc
+                0x02001d2c        0x8 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
+                0x02001d2c                sgIP_malloc
  .text.sgIP_free
-                0x02001d60       0x1c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
-                0x02001d60                sgIP_free
+                0x02001d34       0x1c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
+                0x02001d34                sgIP_free
  .text.Wifi_GetAPData
-                0x02001d7c       0x88 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
-                0x02001d7c                Wifi_GetAPData
+                0x02001d50       0x88 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
+                0x02001d50                Wifi_GetAPData
  .text.Wifi_FindMatchingAP
-                0x02001e04      0x12c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
-                0x02001e04                Wifi_FindMatchingAP
+                0x02001dd8      0x12c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
+                0x02001dd8                Wifi_FindMatchingAP
  .text.Wifi_AssocStatus
-                0x02001f30      0x368 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
-                0x02001f30                Wifi_AssocStatus
+                0x02001f04      0x368 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
+                0x02001f04                Wifi_AssocStatus
  .text.Wifi_Init
-                0x02002298      0x10c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
-                0x02002298                Wifi_Init
+                0x0200226c      0x10c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
+                0x0200226c                Wifi_Init
  .text.Wifi_Update
-                0x020023a4      0x3f0 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
-                0x020023a4                Wifi_Update
+                0x02002378      0x3f0 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
+                0x02002378                Wifi_Update
  .text.Timer_50ms
-                0x02002794       0x10 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
-                0x02002794                Timer_50ms
+                0x02002768       0x10 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
+                0x02002768                Timer_50ms
  .text.wifiValue32Handler
-                0x020027a4       0x20 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
-                0x020027a4                wifiValue32Handler
+                0x02002778       0x20 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
+                0x02002778                wifiValue32Handler
  .text.Wifi_InitDefault
-                0x020027c4       0xbc /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
-                0x020027c4                Wifi_InitDefault
+                0x02002798       0xbc /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
+                0x02002798                Wifi_InitDefault
  .text.sgIP_sockets_Init
-                0x02002880       0x18 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_sockets.c.o)
-                0x02002880                sgIP_sockets_Init
- .text.socket   0x02002898       0x94 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_sockets.c.o)
-                0x02002898                socket
+                0x02002854       0x18 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_sockets.c.o)
+                0x02002854                sgIP_sockets_Init
+ .text.socket   0x0200286c       0x94 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_sockets.c.o)
+                0x0200286c                socket
  .text.forceclosesocket
-                0x0200292c       0x5c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_sockets.c.o)
-                0x0200292c                forceclosesocket
+                0x02002900       0x5c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_sockets.c.o)
+                0x02002900                forceclosesocket
  .text.sgIP_sockets_Timer1000ms
-                0x02002988       0x68 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_sockets.c.o)
-                0x02002988                sgIP_sockets_Timer1000ms
- .text.bind     0x020029f0       0x84 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_sockets.c.o)
-                0x020029f0                bind
- .text.connect  0x02002a74       0xec /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_sockets.c.o)
-                0x02002a74                connect
- .text.send     0x02002b60       0xd0 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_sockets.c.o)
-                0x02002b60                send
- .text.recv     0x02002c30       0xd0 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_sockets.c.o)
-                0x02002c30                recv
- .text.sendto   0x02002d00       0x90 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_sockets.c.o)
-                0x02002d00                sendto
+                0x0200295c       0x68 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_sockets.c.o)
+                0x0200295c                sgIP_sockets_Timer1000ms
+ .text.bind     0x020029c4       0x84 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_sockets.c.o)
+                0x020029c4                bind
+ .text.connect  0x02002a48       0xec /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_sockets.c.o)
+                0x02002a48                connect
+ .text.send     0x02002b34       0xd0 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_sockets.c.o)
+                0x02002b34                send
+ .text.recv     0x02002c04       0xd0 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_sockets.c.o)
+                0x02002c04                recv
+ .text.sendto   0x02002cd4       0x90 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_sockets.c.o)
+                0x02002cd4                sendto
  .text.recvfrom
-                0x02002d90       0xf8 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_sockets.c.o)
-                0x02002d90                recvfrom
+                0x02002d64       0xf8 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_sockets.c.o)
+                0x02002d64                recvfrom
  .text.shutdown
-                0x02002e88       0x78 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_sockets.c.o)
-                0x02002e88                shutdown
+                0x02002e5c       0x78 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_sockets.c.o)
+                0x02002e5c                shutdown
  .text.closesocket
-                0x02002f00       0x9c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_sockets.c.o)
-                0x02002f00                closesocket
- .text.ioctl    0x02002f9c       0xd8 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_sockets.c.o)
-                0x02002f9c                ioctl
+                0x02002ed4       0x9c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_sockets.c.o)
+                0x02002ed4                closesocket
+ .text.ioctl    0x02002f70       0xd8 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_sockets.c.o)
+                0x02002f70                ioctl
  .text.sgIP_DHCP_Init
-                0x02003074       0x48 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
-                0x02003074                sgIP_DHCP_Init
+                0x02003048       0x48 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
+                0x02003048                sgIP_DHCP_Init
  .text.sgIP_DHCP_SendDgram
-                0x020030bc       0x6c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
-                0x020030bc                sgIP_DHCP_SendDgram
+                0x02003090       0x6c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
+                0x02003090                sgIP_DHCP_SendDgram
  .text.sgIP_DHCP_BeginDgram
-                0x02003128      0x1f0 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
-                0x02003128                sgIP_DHCP_BeginDgram
+                0x020030fc      0x1f0 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
+                0x020030fc                sgIP_DHCP_BeginDgram
  .text.sgIP_DHCP_Start
-                0x02003318       0xec /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
-                0x02003318                sgIP_DHCP_Start
+                0x020032ec       0xec /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
+                0x020032ec                sgIP_DHCP_Start
  .text.sgIP_DHCP_Update
-                0x02003404      0x44c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
-                0x02003404                sgIP_DHCP_Update
+                0x020033d8      0x44c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
+                0x020033d8                sgIP_DHCP_Update
  .text.gethostname
-                0x02003850       0x4c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
-                0x02003850                gethostname
+                0x02003824       0x4c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
+                0x02003824                gethostname
  .text.sgIP_memblock_Init
-                0x0200389c        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_memblock.c.o)
-                0x0200389c                sgIP_memblock_Init
+                0x02003870        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_memblock.c.o)
+                0x02003870                sgIP_memblock_Init
  .text.sgIP_memblock_allocHW
-                0x020038a0       0x24 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_memblock.c.o)
-                0x020038a0                sgIP_memblock_allocHW
+                0x02003874       0x24 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_memblock.c.o)
+                0x02003874                sgIP_memblock_allocHW
  .text.sgIP_memblock_alloc
-                0x020038c4       0x20 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_memblock.c.o)
-                0x020038c4                sgIP_memblock_alloc
+                0x02003898       0x20 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_memblock.c.o)
+                0x02003898                sgIP_memblock_alloc
  .text.sgIP_memblock_free
-                0x020038e4       0x2c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_memblock.c.o)
-                0x020038e4                sgIP_memblock_free
+                0x020038b8       0x2c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_memblock.c.o)
+                0x020038b8                sgIP_memblock_free
  .text.sgIP_memblock_exposeheader
-                0x02003910       0x28 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_memblock.c.o)
-                0x02003910                sgIP_memblock_exposeheader
+                0x020038e4       0x28 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_memblock.c.o)
+                0x020038e4                sgIP_memblock_exposeheader
  .text.sgIP_memblock_trimsize
-                0x02003938       0x58 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_memblock.c.o)
-                0x02003938                sgIP_memblock_trimsize
+                0x0200390c       0x58 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_memblock.c.o)
+                0x0200390c                sgIP_memblock_trimsize
  .text.sgIP_memblock_IPChecksum
-                0x02003990      0x138 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_memblock.c.o)
-                0x02003990                sgIP_memblock_IPChecksum
+                0x02003964      0x138 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_memblock.c.o)
+                0x02003964                sgIP_memblock_IPChecksum
  .text.sgIP_memblock_CopyToLinear
-                0x02003ac8       0x74 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_memblock.c.o)
-                0x02003ac8                sgIP_memblock_CopyToLinear
+                0x02003a9c       0x74 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_memblock.c.o)
+                0x02003a9c                sgIP_memblock_CopyToLinear
  .text.sgIP_memblock_CopyFromLinear
-                0x02003b3c       0x74 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_memblock.c.o)
-                0x02003b3c                sgIP_memblock_CopyFromLinear
+                0x02003b10       0x74 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_memblock.c.o)
+                0x02003b10                sgIP_memblock_CopyFromLinear
  .text.sgIP_DNS_Init
-                0x02003bb0       0x28 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DNS.c.o)
-                0x02003bb0                sgIP_DNS_Init
+                0x02003b84       0x28 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DNS.c.o)
+                0x02003b84                sgIP_DNS_Init
  .text.sgIP_DNS_Timer1000ms
-                0x02003bd8       0x68 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DNS.c.o)
-                0x02003bd8                sgIP_DNS_Timer1000ms
+                0x02003bac       0x68 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DNS.c.o)
+                0x02003bac                sgIP_DNS_Timer1000ms
  .text.sgIP_DNS_AllocUnusedRecord
-                0x02003c40       0xe4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DNS.c.o)
-                0x02003c40                sgIP_DNS_AllocUnusedRecord
+                0x02003c14       0xe4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DNS.c.o)
+                0x02003c14                sgIP_DNS_AllocUnusedRecord
  .text.sgIP_TCP_FixChecksum.part.0
-                0x02003d24       0x68 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
+                0x02003cf8       0x68 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
  .text.sgIP_TCP_Init
-                0x02003d8c       0x34 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
-                0x02003d8c                sgIP_TCP_Init
+                0x02003d60       0x34 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
+                0x02003d60                sgIP_TCP_Init
  .text.sgIP_TCP_GetUnusedOutgoingPort
-                0x02003dc0       0x74 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
-                0x02003dc0                sgIP_TCP_GetUnusedOutgoingPort
+                0x02003d94       0x74 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
+                0x02003d94                sgIP_TCP_GetUnusedOutgoingPort
  .text.sgIP_TCP_CalcChecksum
-                0x02003e34       0x60 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
-                0x02003e34                sgIP_TCP_CalcChecksum
+                0x02003e08       0x60 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
+                0x02003e08                sgIP_TCP_CalcChecksum
  .text.sgIP_TCP_GenHeader
-                0x02003e94       0xcc /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
-                0x02003e94                sgIP_TCP_GenHeader
+                0x02003e68       0xcc /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
+                0x02003e68                sgIP_TCP_GenHeader
  .text.sgIP_TCP_SendPacket
-                0x02003f60       0xe8 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
-                0x02003f60                sgIP_TCP_SendPacket
+                0x02003f34       0xe8 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
+                0x02003f34                sgIP_TCP_SendPacket
  .text.sgIP_TCP_SendSynReply
-                0x02004048       0xac /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
-                0x02004048                sgIP_TCP_SendSynReply
+                0x0200401c       0xac /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
+                0x0200401c                sgIP_TCP_SendSynReply
  .text.sgIP_TCP_Timer
-                0x020040f4      0x284 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
-                0x020040f4                sgIP_TCP_Timer
+                0x020040c8      0x284 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
+                0x020040c8                sgIP_TCP_Timer
  .text.sgIP_TCP_AllocRecord
-                0x02004378       0x4c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
-                0x02004378                sgIP_TCP_AllocRecord
+                0x0200434c       0x4c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
+                0x0200434c                sgIP_TCP_AllocRecord
  .text.sgIP_TCP_ReceivePacket
-                0x020043c4      0x644 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
-                0x020043c4                sgIP_TCP_ReceivePacket
+                0x02004398      0x644 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
+                0x02004398                sgIP_TCP_ReceivePacket
  .text.sgIP_TCP_FreeRecord
-                0x02004a08       0xe8 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
-                0x02004a08                sgIP_TCP_FreeRecord
+                0x020049dc       0xe8 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
+                0x020049dc                sgIP_TCP_FreeRecord
  .text.sgIP_TCP_Bind
-                0x02004af0       0x2c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
-                0x02004af0                sgIP_TCP_Bind
+                0x02004ac4       0x2c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
+                0x02004ac4                sgIP_TCP_Bind
  .text.sgIP_TCP_Close
-                0x02004b1c       0x40 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
-                0x02004b1c                sgIP_TCP_Close
+                0x02004af0       0x40 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
+                0x02004af0                sgIP_TCP_Close
  .text.sgIP_TCP_Connect
-                0x02004b5c      0x10c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
-                0x02004b5c                sgIP_TCP_Connect
+                0x02004b30      0x10c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
+                0x02004b30                sgIP_TCP_Connect
  .text.sgIP_TCP_Send
-                0x02004c68      0x128 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
-                0x02004c68                sgIP_TCP_Send
+                0x02004c3c      0x128 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
+                0x02004c3c                sgIP_TCP_Send
  .text.sgIP_TCP_Recv
-                0x02004d90       0xf8 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
-                0x02004d90                sgIP_TCP_Recv
+                0x02004d64       0xf8 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
+                0x02004d64                sgIP_TCP_Recv
  .text.sgIP_UDP_Init
-                0x02004e88       0x1c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_UDP.c.o)
-                0x02004e88                sgIP_UDP_Init
+                0x02004e5c       0x1c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_UDP.c.o)
+                0x02004e5c                sgIP_UDP_Init
  .text.sgIP_UDP_GetUnusedOutgoingPort
-                0x02004ea4       0x6c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_UDP.c.o)
-                0x02004ea4                sgIP_UDP_GetUnusedOutgoingPort
+                0x02004e78       0x6c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_UDP.c.o)
+                0x02004e78                sgIP_UDP_GetUnusedOutgoingPort
  .text.sgIP_UDP_CalcChecksum
-                0x02004f10       0x70 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_UDP.c.o)
-                0x02004f10                sgIP_UDP_CalcChecksum
+                0x02004ee4       0x70 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_UDP.c.o)
+                0x02004ee4                sgIP_UDP_CalcChecksum
  .text.sgIP_UDP_ReceivePacket
-                0x02004f80       0xac /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_UDP.c.o)
-                0x02004f80                sgIP_UDP_ReceivePacket
+                0x02004f54       0xac /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_UDP.c.o)
+                0x02004f54                sgIP_UDP_ReceivePacket
  .text.sgIP_UDP_SendPacket
-                0x0200502c       0xec /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_UDP.c.o)
-                0x0200502c                sgIP_UDP_SendPacket
+                0x02005000       0xec /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_UDP.c.o)
+                0x02005000                sgIP_UDP_SendPacket
  .text.sgIP_UDP_AllocRecord
-                0x02005118       0x38 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_UDP.c.o)
-                0x02005118                sgIP_UDP_AllocRecord
+                0x020050ec       0x38 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_UDP.c.o)
+                0x020050ec                sgIP_UDP_AllocRecord
  .text.sgIP_UDP_FreeRecord
-                0x02005150       0x54 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_UDP.c.o)
-                0x02005150                sgIP_UDP_FreeRecord
+                0x02005124       0x54 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_UDP.c.o)
+                0x02005124                sgIP_UDP_FreeRecord
  .text.sgIP_UDP_Bind
-                0x020051a4       0x48 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_UDP.c.o)
-                0x020051a4                sgIP_UDP_Bind
+                0x02005178       0x48 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_UDP.c.o)
+                0x02005178                sgIP_UDP_Bind
  .text.sgIP_UDP_RecvFrom
-                0x020051ec       0xe0 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_UDP.c.o)
-                0x020051ec                sgIP_UDP_RecvFrom
+                0x020051c0       0xe0 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_UDP.c.o)
+                0x020051c0                sgIP_UDP_RecvFrom
  .text.sgIP_UDP_SendTo
-                0x020052cc       0x14 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_UDP.c.o)
-                0x020052cc                sgIP_UDP_SendTo
+                0x020052a0       0x14 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_UDP.c.o)
+                0x020052a0                sgIP_UDP_SendTo
  .text.sgIP_Hub_Init
-                0x020052e0       0x14 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_Hub.c.o)
-                0x020052e0                sgIP_Hub_Init
+                0x020052b4       0x14 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_Hub.c.o)
+                0x020052b4                sgIP_Hub_Init
  .text.sgIP_Hub_AddProtocolInterface
-                0x020052f4       0x44 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_Hub.c.o)
-                0x020052f4                sgIP_Hub_AddProtocolInterface
+                0x020052c8       0x44 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_Hub.c.o)
+                0x020052c8                sgIP_Hub_AddProtocolInterface
  .text.sgIP_Hub_AddHardwareInterface
-                0x02005338       0x40 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_Hub.c.o)
-                0x02005338                sgIP_Hub_AddHardwareInterface
+                0x0200530c       0x40 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_Hub.c.o)
+                0x0200530c                sgIP_Hub_AddHardwareInterface
  .text.sgIP_Hub_ReceiveHardwarePacket
-                0x02005378       0x58 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_Hub.c.o)
-                0x02005378                sgIP_Hub_ReceiveHardwarePacket
+                0x0200534c       0x58 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_Hub.c.o)
+                0x0200534c                sgIP_Hub_ReceiveHardwarePacket
  .text.sgIP_Hub_SendProtocolPacket
-                0x020053d0       0x44 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_Hub.c.o)
-                0x020053d0                sgIP_Hub_SendProtocolPacket
+                0x020053a4       0x44 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_Hub.c.o)
+                0x020053a4                sgIP_Hub_SendProtocolPacket
  .text.sgIP_Hub_SendRawPacket
-                0x02005414       0x24 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_Hub.c.o)
-                0x02005414                sgIP_Hub_SendRawPacket
+                0x020053e8       0x24 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_Hub.c.o)
+                0x020053e8                sgIP_Hub_SendRawPacket
  .text.sgIP_Hub_IPMaxMessageSize
-                0x02005438        0x8 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_Hub.c.o)
-                0x02005438                sgIP_Hub_IPMaxMessageSize
+                0x0200540c        0x8 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_Hub.c.o)
+                0x0200540c                sgIP_Hub_IPMaxMessageSize
  .text.sgIP_Hub_GetCompatibleIP
-                0x02005440       0x14 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_Hub.c.o)
-                0x02005440                sgIP_Hub_GetCompatibleIP
- .text.htons    0x02005454       0x10 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_Hub.c.o)
-                0x02005454                htons
- .text.htonl    0x02005464       0x18 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_Hub.c.o)
-                0x02005464                htonl
+                0x02005414       0x14 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_Hub.c.o)
+                0x02005414                sgIP_Hub_GetCompatibleIP
+ .text.htons    0x02005428       0x10 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_Hub.c.o)
+                0x02005428                htons
+ .text.htonl    0x02005438       0x18 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_Hub.c.o)
+                0x02005438                htonl
  .text.sgIP_GetArpSlot
-                0x0200547c       0x4c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_ARP.c.o)
-                0x0200547c                sgIP_GetArpSlot
+                0x02005450       0x4c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_ARP.c.o)
+                0x02005450                sgIP_GetArpSlot
  .text.sgIP_ARP_Init
-                0x020054c8       0x1c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_ARP.c.o)
-                0x020054c8                sgIP_ARP_Init
+                0x0200549c       0x1c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_ARP.c.o)
+                0x0200549c                sgIP_ARP_Init
  .text.sgIP_ARP_FlushInterface
-                0x020054e4       0x40 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_ARP.c.o)
-                0x020054e4                sgIP_ARP_FlushInterface
+                0x020054b8       0x40 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_ARP.c.o)
+                0x020054b8                sgIP_ARP_FlushInterface
  .text.sgIP_ARP_SendARPResponse
-                0x02005524       0xe4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_ARP.c.o)
-                0x02005524                sgIP_ARP_SendARPResponse
+                0x020054f8       0xe4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_ARP.c.o)
+                0x020054f8                sgIP_ARP_SendARPResponse
  .text.sgIP_ARP_SendGratARP
-                0x02005608       0xe4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_ARP.c.o)
-                0x02005608                sgIP_ARP_SendGratARP
+                0x020055dc       0xe4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_ARP.c.o)
+                0x020055dc                sgIP_ARP_SendGratARP
  .text.sgIP_ARP_SendARPRequest
-                0x020056ec       0xec /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_ARP.c.o)
-                0x020056ec                sgIP_ARP_SendARPRequest
+                0x020056c0       0xec /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_ARP.c.o)
+                0x020056c0                sgIP_ARP_SendARPRequest
  .text.sgIP_ARP_Timer100ms
-                0x020057d8       0x70 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_ARP.c.o)
-                0x020057d8                sgIP_ARP_Timer100ms
+                0x020057ac       0x70 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_ARP.c.o)
+                0x020057ac                sgIP_ARP_Timer100ms
  .text.sgIP_ARP_SendProtocolFrame
-                0x02005848      0x11c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_ARP.c.o)
-                0x02005848                sgIP_ARP_SendProtocolFrame
+                0x0200581c      0x11c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_ARP.c.o)
+                0x0200581c                sgIP_ARP_SendProtocolFrame
  .text.sgIP_ARP_ProcessARPFrame
-                0x02005964      0x108 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_ARP.c.o)
-                0x02005964                sgIP_ARP_ProcessARPFrame
+                0x02005938      0x108 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_ARP.c.o)
+                0x02005938                sgIP_ARP_ProcessARPFrame
  .text.sgIP_Init
-                0x02005a6c       0x3c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP.c.o)
-                0x02005a6c                sgIP_Init
+                0x02005a40       0x3c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP.c.o)
+                0x02005a40                sgIP_Init
  .text.sgIP_Timer
-                0x02005aa8       0x78 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP.c.o)
-                0x02005aa8                sgIP_Timer
+                0x02005a7c       0x78 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP.c.o)
+                0x02005a7c                sgIP_Timer
  .text.sgIP_IP_ReceivePacket
-                0x02005b20       0x94 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_IP.c.o)
-                0x02005b20                sgIP_IP_ReceivePacket
+                0x02005af4       0x94 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_IP.c.o)
+                0x02005af4                sgIP_IP_ReceivePacket
  .text.sgIP_IP_MaxContentsSize
-                0x02005bb4        0xc /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_IP.c.o)
-                0x02005bb4                sgIP_IP_MaxContentsSize
+                0x02005b88        0xc /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_IP.c.o)
+                0x02005b88                sgIP_IP_MaxContentsSize
  .text.sgIP_IP_RequiredHeaderSize
-                0x02005bc0        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_IP.c.o)
-                0x02005bc0                sgIP_IP_RequiredHeaderSize
+                0x02005b94        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_IP.c.o)
+                0x02005b94                sgIP_IP_RequiredHeaderSize
  .text.sgIP_IP_SendViaIP
-                0x02005bc4       0x90 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_IP.c.o)
-                0x02005bc4                sgIP_IP_SendViaIP
+                0x02005b98       0x90 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_IP.c.o)
+                0x02005b98                sgIP_IP_SendViaIP
  .text.sgIP_IP_GetLocalBindAddr
-                0x02005c54       0x10 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_IP.c.o)
-                0x02005c54                sgIP_IP_GetLocalBindAddr
+                0x02005c28       0x10 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_IP.c.o)
+                0x02005c28                sgIP_IP_GetLocalBindAddr
  .text.sgIP_ICMP_ReceivePacket
-                0x02005c64       0x5c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_ICMP.c.o)
-                0x02005c64                sgIP_ICMP_ReceivePacket
+                0x02005c38       0x5c /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_ICMP.c.o)
+                0x02005c38                sgIP_ICMP_ReceivePacket
  .text.swiWaitForVBlank
-                0x02005cc0        0x8 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(IntrWait.s.o)
-                0x02005cc0                swiWaitForVBlank
+                0x02005c94        0x8 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(IntrWait.s.o)
+                0x02005c94                swiWaitForVBlank
  .text.swiIntrWait
-                0x02005cc8       0x70 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(IntrWait.s.o)
-                0x02005cc8                swiIntrWait
+                0x02005c9c       0x70 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(IntrWait.s.o)
+                0x02005c9c                swiIntrWait
  .text.__libnds_mpu_setup
-                0x02005d38      0x1c4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(mpu_setup.s.o)
-                0x02005d38                __libnds_mpu_setup
+                0x02005d0c      0x1c4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(mpu_setup.s.o)
+                0x02005d0c                __libnds_mpu_setup
  .text.memUncached
-                0x02005efc       0x20 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(mpu_setup.s.o)
-                0x02005efc                memUncached
+                0x02005ed0       0x20 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(mpu_setup.s.o)
+                0x02005ed0                memUncached
  .text.CP15_CleanAndFlushDCache
-                0x02005f1c       0x34 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(cp15.s.o)
-                0x02005f1c                CP15_CleanAndFlushDCache
+                0x02005ef0       0x34 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(cp15.s.o)
+                0x02005ef0                CP15_CleanAndFlushDCache
  .text.__aeabi_memmove
-                0x02005f50        0xc /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(memmove.s.o)
-                0x02005f50                __aeabi_memmove
- .text.memmove  0x02005f5c       0x10 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(memmove.s.o)
-                0x02005f5c                memmove
+                0x02005f24        0xc /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(memmove.s.o)
+                0x02005f24                __aeabi_memmove
+ .text.memmove  0x02005f30       0x10 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(memmove.s.o)
+                0x02005f30                memmove
  .text.__aeabi_memcpy
-                0x02005f6c       0xdc /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(memcpy.s.o)
-                0x02005f6c                __aeabi_memcpy
-                0x02005fa4                __aeabi_memcpy4
-                0x02005fa4                __aeabi_memcpy8
-                0x02006010                __ndsabi_memcpy2
-                0x02006034                __ndsabi_memcpy1
- .text.memcpy   0x02006048       0x10 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(memcpy.s.o)
-                0x02006048                memcpy
+                0x02005f40       0xdc /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(memcpy.s.o)
+                0x02005f40                __aeabi_memcpy
+                0x02005f78                __aeabi_memcpy4
+                0x02005f78                __aeabi_memcpy8
+                0x02005fe4                __ndsabi_memcpy2
+                0x02006008                __ndsabi_memcpy1
+ .text.memcpy   0x0200601c       0x10 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(memcpy.s.o)
+                0x0200601c                memcpy
  .text.__aeabi_memset
-                0x02006058       0x9c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(memset.s.o)
-                0x02006058                __aeabi_memset
-                0x0200607c                __aeabi_memset8
-                0x0200607c                __aeabi_memset4
-                0x02006088                __ndsabi_wordset4
-                0x0200608c                __ndsabi_lwordset4
+                0x0200602c       0x9c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(memset.s.o)
+                0x0200602c                __aeabi_memset
+                0x02006050                __aeabi_memset8
+                0x02006050                __aeabi_memset4
+                0x0200605c                __ndsabi_wordset4
+                0x02006060                __ndsabi_lwordset4
  .text.__ndsabi_memset1
-                0x020060f4       0x10 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(memset.s.o)
-                0x020060f4                __ndsabi_memset1
- .text.memset   0x02006104       0x1c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(memset.s.o)
-                0x02006104                memset
+                0x020060c8       0x10 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(memset.s.o)
+                0x020060c8                __ndsabi_memset1
+ .text.memset   0x020060d8       0x1c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(memset.s.o)
+                0x020060d8                memset
  .text.__aeabi_read_tp
-                0x02006120        0xc /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(aeabi_read_tp.s.o)
-                0x02006120                __aeabi_read_tp
+                0x020060f4        0xc /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(aeabi_read_tp.s.o)
+                0x020060f4                __aeabi_read_tp
  .text.scanKeys
-                0x0200612c       0xc0 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(keys.c.o)
-                0x0200612c                scanKeys
+                0x02006100       0xc0 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(keys.c.o)
+                0x02006100                scanKeys
  .text.keysHeld
-                0x020061ec        0xc /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(keys.c.o)
-                0x020061ec                keysHeld
+                0x020061c0        0xc /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(keys.c.o)
+                0x020061c0                keysHeld
  .text.setTransferInputData
-                0x020061f8       0x20 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(keys.c.o)
-                0x020061f8                setTransferInputData
+                0x020061cc       0x20 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(keys.c.o)
+                0x020061cc                setTransferInputData
  .text.initSystem
-                0x02006218      0x1a0 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(initSystem.c.o)
-                0x02006218                initSystem
- .text.newRow   0x020063b8       0xdc /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(console.c.o)
+                0x020061ec      0x1a0 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(initSystem.c.o)
+                0x020061ec                initSystem
+ .text.newRow   0x0200638c       0xdc /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(console.c.o)
  .text.consolePrintChar
-                0x02006494       0xe0 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(console.c.o)
-                0x02006494                consolePrintChar
+                0x02006468       0xe0 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(console.c.o)
+                0x02006468                consolePrintChar
  .text.con_write
-                0x02006574      0x344 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(console.c.o)
+                0x02006548      0x344 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(console.c.o)
  .text.consoleLoadFont
-                0x020068b8      0x36c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(console.c.o)
-                0x020068b8                consoleLoadFont
+                0x0200688c      0x36c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(console.c.o)
+                0x0200688c                consoleLoadFont
  .text.consoleInit
-                0x02006c24      0x194 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(console.c.o)
-                0x02006c24                consoleInit
+                0x02006bf8      0x194 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(console.c.o)
+                0x02006bf8                consoleInit
  .text.consoleDemoInit
-                0x02006db8       0x48 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(console.c.o)
-                0x02006db8                consoleDemoInit
- .text.close    0x02006e00       0x50 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(filesystem.c.o)
-                0x02006e00                close
+                0x02006d8c       0x48 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(console.c.o)
+                0x02006d8c                consoleDemoInit
+ .text.close    0x02006dd4       0x50 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(filesystem.c.o)
+                0x02006dd4                close
  .text.fatfs_error_to_posix
-                0x02006e50       0x24 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fatfs.c.o)
-                0x02006e50                fatfs_error_to_posix
+                0x02006e24       0x24 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fatfs.c.o)
+                0x02006e24                fatfs_error_to_posix
  .text.fatfs_timestamp_to_fattime
-                0x02006e74       0x2c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fatfs.c.o)
-                0x02006e74                fatfs_timestamp_to_fattime
+                0x02006e48       0x2c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fatfs.c.o)
+                0x02006e48                fatfs_timestamp_to_fattime
  .text.cache_sector_get
-                0x02006ea0       0x70 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(cache.c.o)
-                0x02006ea0                cache_sector_get
+                0x02006e74       0x70 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(cache.c.o)
+                0x02006e74                cache_sector_get
  .text.cache_sector_add
-                0x02006f10      0x144 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(cache.c.o)
-                0x02006f10                cache_sector_add
+                0x02006ee4      0x144 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(cache.c.o)
+                0x02006ee4                cache_sector_add
  .text.cache_sector_invalidate
-                0x02007054       0x44 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(cache.c.o)
-                0x02007054                cache_sector_invalidate
+                0x02007028       0x44 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(cache.c.o)
+                0x02007028                cache_sector_invalidate
  .text.nitrofs_close
-                0x02007098       0x10 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(nitrofs.c.o)
-                0x02007098                nitrofs_close
+                0x0200706c       0x10 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(nitrofs.c.o)
+                0x0200706c                nitrofs_close
  .text.build_argv
-                0x020070a8       0x58 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(crt0_argv.c.o)
-                0x020070a8                build_argv
+                0x0200707c       0x58 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(crt0_argv.c.o)
+                0x0200707c                build_argv
  .text.putc_buffered
-                0x02007100       0x98 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(iob.c.o)
+                0x020070d4       0x98 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(iob.c.o)
  .text.stdout_putc_buffered
-                0x02007198       0x20 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(iob.c.o)
+                0x0200716c       0x20 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(iob.c.o)
  .text.stderr_putc_buffered
-                0x020071b8       0x20 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(iob.c.o)
+                0x0200718c       0x20 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(iob.c.o)
  .text.dldiGetStubEnd
-                0x020071d8        0x8 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(dldi.c.o)
-                0x020071d8                dldiGetStubEnd
+                0x020071ac        0x8 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(dldi.c.o)
+                0x020071ac                dldiGetStubEnd
  .text.fifo_buffer_enqueue_block
-                0x020071e0       0x44 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
+                0x020071b4       0x44 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
  .text.fifo_buffer_wait_block
-                0x02007224       0x80 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
+                0x020071f8       0x80 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
  .text.fifoInternalSend.part.0
-                0x020072a4       0xcc /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
+                0x02007278       0xcc /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
  .text.fifoInternalSendInterrupt
-                0x02007370       0xb0 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
+                0x02007344       0xb0 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
  .text.fifoSetValue32Handler
-                0x02007420       0xd4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
-                0x02007420                fifoSetValue32Handler
+                0x020073f4       0xd4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
+                0x020073f4                fifoSetValue32Handler
  .text.fifoSendAddress
-                0x020074f4       0x38 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
-                0x020074f4                fifoSendAddress
+                0x020074c8       0x38 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
+                0x020074c8                fifoSendAddress
  .text.fifoSendValue32
-                0x0200752c       0x50 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
-                0x0200752c                fifoSendValue32
+                0x02007500       0x50 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
+                0x02007500                fifoSendValue32
  .text.fifoGetValue32
-                0x0200757c       0x70 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
-                0x0200757c                fifoGetValue32
+                0x02007550       0x70 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
+                0x02007550                fifoGetValue32
  .text.fifoGetDatamsg
-                0x020075ec       0xe8 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
-                0x020075ec                fifoGetDatamsg
+                0x020075c0       0xe8 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
+                0x020075c0                fifoGetDatamsg
  .text.fifoInternalRecvInterrupt
-                0x020076d4      0x310 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
+                0x020076a8      0x310 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
  .text.fifoSetDatamsgHandler
-                0x020079e4       0x9c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
-                0x020079e4                fifoSetDatamsgHandler
+                0x020079b8       0x9c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
+                0x020079b8                fifoSetDatamsgHandler
  .text.fifoCheckValue32
-                0x02007a80       0x24 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
-                0x02007a80                fifoCheckValue32
+                0x02007a54       0x24 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
+                0x02007a54                fifoCheckValue32
  .text.fifoInit
-                0x02007aa4      0x114 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
-                0x02007aa4                fifoInit
+                0x02007a78      0x114 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
+                0x02007a78                fifoInit
  .text.fifoMutexAcquire
-                0x02007bb8       0x30 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
-                0x02007bb8                fifoMutexAcquire
+                0x02007b8c       0x30 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
+                0x02007b8c                fifoMutexAcquire
  .text.fifoMutexRelease
-                0x02007be8       0x14 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
-                0x02007be8                fifoMutexRelease
+                0x02007bbc       0x14 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
+                0x02007bbc                fifoMutexRelease
  .text.irqDummy
-                0x02007bfc        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(interrupts.c.o)
-                0x02007bfc                irqDummy
- .text.irqSet   0x02007c00       0x78 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(interrupts.c.o)
-                0x02007c00                irqSet
- .text.irqInit  0x02007c78       0x50 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(interrupts.c.o)
-                0x02007c78                irqInit
+                0x02007bd0        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(interrupts.c.o)
+                0x02007bd0                irqDummy
+ .text.irqSet   0x02007bd4       0x78 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(interrupts.c.o)
+                0x02007bd4                irqSet
+ .text.irqInit  0x02007c4c       0x50 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(interrupts.c.o)
+                0x02007c4c                irqInit
  .text.irqEnable
-                0x02007cc8       0x64 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(interrupts.c.o)
-                0x02007cc8                irqEnable
+                0x02007c9c       0x64 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(interrupts.c.o)
+                0x02007c9c                irqEnable
  .text.systemErrorExit
-                0x02007d2c        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(exit.c.o)
-                0x02007d2c                systemErrorExit
+                0x02007d00        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(exit.c.o)
+                0x02007d00                systemErrorExit
  .text.__libnds_exit
-                0x02007d30        0x8 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(exit.c.o)
-                0x02007d30                __libnds_exit
- .text._exit    0x02007d38       0x78 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(exit.c.o)
-                0x02007d38                _exit
- .text.sbrk     0x02007db0       0x5c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(sbrk.c.o)
-                0x02007db0                sbrk
+                0x02007d04        0x8 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(exit.c.o)
+                0x02007d04                __libnds_exit
+ .text._exit    0x02007d0c       0x78 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(exit.c.o)
+                0x02007d0c                _exit
+ .text.sbrk     0x02007d84       0x5c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(sbrk.c.o)
+                0x02007d84                sbrk
  .text.cothread_delete_internal
-                0x02007e0c       0x3c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(threads.c.o)
+                0x02007de0       0x3c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(threads.c.o)
  .text.cothread_main
-                0x02007e48       0x10 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(threads.c.o)
-                0x02007e48                cothread_main
+                0x02007e1c       0x10 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(threads.c.o)
+                0x02007e1c                cothread_main
  .text.cothread_yield
-                0x02007e58       0x14 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(threads.c.o)
-                0x02007e58                cothread_yield
+                0x02007e2c       0x14 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(threads.c.o)
+                0x02007e2c                cothread_yield
  .text.cothread_yield_irq
-                0x02007e6c       0x18 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(threads.c.o)
-                0x02007e6c                cothread_yield_irq
+                0x02007e40       0x18 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(threads.c.o)
+                0x02007e40                cothread_yield_irq
  .text.cothread_start
-                0x02007e84       0xe8 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(threads.c.o)
-                0x02007e84                cothread_start
- .text.sync_fs  0x02007f6c       0xb4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(ff.c.o)
+                0x02007e58       0xe8 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(threads.c.o)
+                0x02007e58                cothread_start
+ .text.sync_fs  0x02007f40       0xb4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(ff.c.o)
  .text.move_window
-                0x02008020       0x6c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(ff.c.o)
+                0x02007ff4       0x6c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(ff.c.o)
  .text.validate
-                0x0200808c       0x5c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(ff.c.o)
- .text.f_sync   0x020080e8       0xe4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(ff.c.o)
-                0x020080e8                f_sync
- .text.f_close  0x020081cc       0x30 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(ff.c.o)
-                0x020081cc                f_close
+                0x02008060       0x5c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(ff.c.o)
+ .text.f_sync   0x020080bc       0xe4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(ff.c.o)
+                0x020080bc                f_sync
+ .text.f_close  0x020081a0       0x30 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(ff.c.o)
+                0x020081a0                f_close
  .text.dmaSetParams
-                0x020081fc       0x1c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(dma.s.o)
-                0x020081fc                dmaSetParams
+                0x020081d0       0x1c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(dma.s.o)
+                0x020081d0                dmaSetParams
  .text.__ndsabi_rmemcpy
-                0x02008218       0xcc /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(rmemcpy.s.o)
-                0x02008218                __ndsabi_rmemcpy
+                0x020081ec       0xcc /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(rmemcpy.s.o)
+                0x020081ec                __ndsabi_rmemcpy
  .text.__ndsabi_rmemcpy1
-                0x020082e4       0x14 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(rmemcpy.s.o)
-                0x020082e4                __ndsabi_rmemcpy1
+                0x020082b8       0x14 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(rmemcpy.s.o)
+                0x020082b8                __ndsabi_rmemcpy1
  .text.__ndsabi_coro_resume
-                0x020082f8       0x18 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(coroutine.s.o)
-                0x020082f8                __ndsabi_coro_resume
+                0x020082cc       0x18 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(coroutine.s.o)
+                0x020082cc                __ndsabi_coro_resume
  .text.__ndsabi_coro_yield
-                0x02008310       0x1c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(coroutine.s.o)
-                0x02008310                __ndsabi_coro_yield
+                0x020082e4       0x1c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(coroutine.s.o)
+                0x020082e4                __ndsabi_coro_yield
  .text.__ndsabi_coro_pop_noctx
-                0x0200832c       0x34 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(coroutine.s.o)
-                0x0200832c                __ndsabi_coro_pop_noctx
+                0x02008300       0x34 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(coroutine.s.o)
+                0x02008300                __ndsabi_coro_pop_noctx
  .text.checkIfText
-                0x02008360       0x5c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(background.c.o)
-                0x02008360                checkIfText
+                0x02008334       0x5c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(background.c.o)
+                0x02008334                checkIfText
  .text.bgUpdate
-                0x020083bc       0xf4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(background.c.o)
-                0x020083bc                bgUpdate
+                0x02008390       0xf4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(background.c.o)
+                0x02008390                bgUpdate
  .text.bgInit_call
-                0x020084b0       0xac /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(background.c.o)
-                0x020084b0                bgInit_call
+                0x02008484       0xac /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(background.c.o)
+                0x02008484                bgInit_call
  .text.bgInitSub_call
-                0x0200855c       0xb4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(background.c.o)
-                0x0200855c                bgInitSub_call
+                0x02008530       0xb4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(background.c.o)
+                0x02008530                bgInitSub_call
  .text.setBrightness
-                0x02008610       0x40 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(video.c.o)
-                0x02008610                setBrightness
+                0x020085e4       0x40 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(video.c.o)
+                0x020085e4                setBrightness
  .text.vramDefault
-                0x02008650       0xc8 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(video.c.o)
-                0x02008650                vramDefault
+                0x02008624       0xc8 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(video.c.o)
+                0x02008624                vramDefault
  .text.systemValueHandler
-                0x02008718       0x44 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(system.c.o)
-                0x02008718                systemValueHandler
+                0x020086ec       0x44 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(system.c.o)
+                0x020086ec                systemValueHandler
  .text.systemMsgHandler
-                0x0200875c       0x2c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(system.c.o)
-                0x0200875c                systemMsgHandler
- .text.powerOn  0x02008788       0x2c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(system.c.o)
-                0x02008788                powerOn
+                0x02008730       0x2c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(system.c.o)
+                0x02008730                systemMsgHandler
+ .text.powerOn  0x0200875c       0x2c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(system.c.o)
+                0x0200875c                powerOn
  .text.sinLutLookup
-                0x020087b4       0x4c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(trig.c.o)
-                0x020087b4                sinLutLookup
- .text.sinLerp  0x02008800       0x38 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(trig.c.o)
-                0x02008800                sinLerp
- .text.cosLerp  0x02008838       0x48 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(trig.c.o)
-                0x02008838                cosLerp
+                0x02008788       0x4c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(trig.c.o)
+                0x02008788                sinLutLookup
+ .text.sinLerp  0x020087d4       0x38 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(trig.c.o)
+                0x020087d4                sinLerp
+ .text.cosLerp  0x0200880c       0x48 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(trig.c.o)
+                0x0200880c                cosLerp
  .text.ff_mutex_take
-                0x02008880       0x1c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(ffsystem.c.o)
-                0x02008880                ff_mutex_take
+                0x02008854       0x1c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(ffsystem.c.o)
+                0x02008854                ff_mutex_take
  .text.ff_mutex_give
-                0x0200889c       0x10 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(ffsystem.c.o)
-                0x0200889c                ff_mutex_give
+                0x02008870       0x10 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(ffsystem.c.o)
+                0x02008870                ff_mutex_give
  .text.disk_status
-                0x020088ac       0x28 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(diskio.c.o)
-                0x020088ac                disk_status
+                0x02008880       0x28 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(diskio.c.o)
+                0x02008880                disk_status
  .text.disk_read
-                0x020088d4       0xf8 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(diskio.c.o)
-                0x020088d4                disk_read
+                0x020088a8       0xf8 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(diskio.c.o)
+                0x020088a8                disk_read
  .text.disk_write
-                0x020089cc       0xc8 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(diskio.c.o)
-                0x020089cc                disk_write
+                0x020089a0       0xc8 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(diskio.c.o)
+                0x020089a0                disk_write
  .text.disk_ioctl
-                0x02008a94       0x2c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(diskio.c.o)
-                0x02008a94                disk_ioctl
+                0x02008a68       0x2c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(diskio.c.o)
+                0x02008a68                disk_ioctl
  .text.get_fattime
-                0x02008ac0       0x1c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(diskio.c.o)
-                0x02008ac0                get_fattime
+                0x02008a94       0x1c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(diskio.c.o)
+                0x02008a94                get_fattime
  .text.retarget_lock_crash
-                0x02008adc        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(locks.c.o)
+                0x02008ab0        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(locks.c.o)
  .text.__retarget_lock_acquire_recursive
-                0x02008ae0       0x40 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(locks.c.o)
-                0x02008ae0                __retarget_lock_acquire_recursive
+                0x02008ab4       0x40 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(locks.c.o)
+                0x02008ab4                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x02008b20       0x48 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(locks.c.o)
-                0x02008b20                __retarget_lock_release_recursive
+                0x02008af4       0x48 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(locks.c.o)
+                0x02008af4                __retarget_lock_release_recursive
  .text.__ndsabi_coro_make_noctx
-                0x02008b68       0x24 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(coroutine.c.o)
-                0x02008b68                __ndsabi_coro_make_noctx
+                0x02008b3c       0x24 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(coroutine.c.o)
+                0x02008b3c                __ndsabi_coro_make_noctx
  .text.malloc_trim
-                0x02008b8c       0xa0 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(malloc-free.c.o)
-                0x02008b8c                malloc_trim
- .text.free     0x02008c2c      0x168 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(malloc-free.c.o)
-                0x02008c2c                __malloc_free
-                0x02008c2c                free
- .text.malloc   0x02008d94      0x434 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(malloc-malloc.c.o)
-                0x02008d94                malloc
+                0x02008b60       0xa0 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(malloc-free.c.o)
+                0x02008b60                malloc_trim
+ .text.free     0x02008c00      0x168 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(malloc-free.c.o)
+                0x02008c00                __malloc_free
+                0x02008c00                free
+ .text.malloc   0x02008d68      0x434 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(malloc-malloc.c.o)
+                0x02008d68                malloc
  .text.__libc_init_array
-                0x020091c8       0x60 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_misc_init.c.o)
-                0x020091c8                __libc_init_array
- .text.exit     0x02009228       0x20 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_stdlib_pico-exit.c.o)
-                0x02009228                exit
- .text.strchr   0x02009248       0x1e /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_string_strchr.c.o)
-                0x02009248                strchr
- .text.strncmp  0x02009266       0x26 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_string_strncmp.c.o)
-                0x02009266                strncmp
- .text.strncpy  0x0200928c       0x26 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_string_strncpy.c.o)
-                0x0200928c                strncpy
- *fill*         0x020092b2        0x2 ff
+                0x0200919c       0x60 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_misc_init.c.o)
+                0x0200919c                __libc_init_array
+ .text.exit     0x020091fc       0x20 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_stdlib_pico-exit.c.o)
+                0x020091fc                exit
+ .text.strchr   0x0200921c       0x1e /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_string_strchr.c.o)
+                0x0200921c                strchr
+ .text.strncmp  0x0200923a       0x26 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_string_strncmp.c.o)
+                0x0200923a                strncmp
+ .text.strncpy  0x02009260       0x26 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_string_strncpy.c.o)
+                0x02009260                strncpy
+ *fill*         0x02009286        0x2 ff
  .text.localtime
-                0x020092b4       0x1c /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_time_lcltime.c.o)
-                0x020092b4                localtime
+                0x02009288       0x1c /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_time_lcltime.c.o)
+                0x02009288                localtime
  .text.localtime_r
-                0x020092d0      0x1fc /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_time_lcltime_r.c.o)
-                0x020092d0                localtime_r
- .text.time     0x020094cc       0x2e /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_time_time.c.o)
-                0x020094cc                time
- *fill*         0x020094fa        0x2 ff
+                0x020092a4      0x1fc /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_time_lcltime_r.c.o)
+                0x020092a4                localtime_r
+ .text.time     0x020094a0       0x2e /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_time_time.c.o)
+                0x020094a0                time
+ *fill*         0x020094ce        0x2 ff
  .text.__tzcalc_limits
-                0x020094fc      0x180 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_time_tzcalc_limits.c.o)
-                0x020094fc                __tzcalc_limits
+                0x020094d0      0x180 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_time_tzcalc_limits.c.o)
+                0x020094d0                __tzcalc_limits
  .text._tzset_unlocked
-                0x0200967c      0x3f4 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_time_tzset.c.o)
-                0x0200967c                _tzset_unlocked
- .text.fflush   0x02009a70       0x1a /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_fflush.c.o)
-                0x02009a70                fflush
- *fill*         0x02009a8a        0x2 ff
- .text.printf   0x02009a8c       0x20 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_printf.c.o)
-                0x02009a8c                printf
- .text.putchar  0x02009aac       0x14 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_putchar.c.o)
-                0x02009aac                putchar
- .text.puts     0x02009ac0       0x4c /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_puts.c.o)
-                0x02009ac0                puts
- .text.setvbuf  0x02009b0c       0x20 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_setvbuf.c.o)
-                0x02009b0c                setvbuf
- .text.sscanf   0x02009b2c       0x3c /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_sscanf.c.o)
-                0x02009b2c                sscanf
- .text.strtoul  0x02009b68      0x130 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_strtoul.c.o)
-                0x02009b68                strtoul
+                0x02009650      0x3f4 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_time_tzset.c.o)
+                0x02009650                _tzset_unlocked
+ .text.fflush   0x02009a44       0x1a /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_fflush.c.o)
+                0x02009a44                fflush
+ *fill*         0x02009a5e        0x2 ff
+ .text.printf   0x02009a60       0x20 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_printf.c.o)
+                0x02009a60                printf
+ .text.putchar  0x02009a80       0x14 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_putchar.c.o)
+                0x02009a80                putchar
+ .text.puts     0x02009a94       0x4c /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_puts.c.o)
+                0x02009a94                puts
+ .text.setvbuf  0x02009ae0       0x20 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_setvbuf.c.o)
+                0x02009ae0                setvbuf
+ .text.sscanf   0x02009b00       0x3c /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_sscanf.c.o)
+                0x02009b00                sscanf
+ .text.strtoul  0x02009b3c      0x130 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_strtoul.c.o)
+                0x02009b3c                strtoul
  .text.__ultoa_invert
-                0x02009c98       0x56 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_vfprintf.c.o)
- *fill*         0x02009cee        0x2 ff
+                0x02009c6c       0x56 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_vfprintf.c.o)
+ *fill*         0x02009cc2        0x2 ff
  .text.skip_to_arg
-                0x02009cf0      0x140 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_vfprintf.c.o)
+                0x02009cc4      0x140 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_vfprintf.c.o)
  .text.vfprintf
-                0x02009e30      0xa30 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_vfprintf.c.o)
-                0x02009e30                __d_vfprintf
-                0x02009e30                vfprintf
+                0x02009e04      0xa30 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_vfprintf.c.o)
+                0x02009e04                __d_vfprintf
+                0x02009e04                vfprintf
  .text.scanf_getc
-                0x0200a860       0x18 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_vfscanf.c.o)
- .text.putval   0x0200a878       0x2e /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_vfscanf.c.o)
+                0x0200a834       0x18 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_vfscanf.c.o)
+ .text.putval   0x0200a84c       0x2e /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_vfscanf.c.o)
  .text.scanf_ungetc.isra.0
-                0x0200a8a6       0x18 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_vfscanf.c.o)
+                0x0200a87a       0x18 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_vfscanf.c.o)
  .text.skip_spaces
-                0x0200a8be       0x2e /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_vfscanf.c.o)
- .text.vfscanf  0x0200a8ec      0x984 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_vfscanf.c.o)
-                0x0200a8ec                __d_vfscanf
-                0x0200a8ec                vfscanf
+                0x0200a892       0x2e /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_vfscanf.c.o)
+ .text.vfscanf  0x0200a8c0      0x984 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_vfscanf.c.o)
+                0x0200a8c0                __d_vfscanf
+                0x0200a8c0                vfscanf
  .text.mulShift64
-                0x0200b270       0x68 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_atod_ryu.c.o)
+                0x0200b244       0x68 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_atod_ryu.c.o)
  .text.__atod_engine
-                0x0200b2d8      0x164 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_atod_ryu.c.o)
-                0x0200b2d8                __atod_engine
+                0x0200b2ac      0x164 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_atod_ryu.c.o)
+                0x0200b2ac                __atod_engine
  .text.__atof_engine
-                0x0200b43c      0x122 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_atof_ryu.c.o)
-                0x0200b43c                __atof_engine
+                0x0200b410      0x122 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_atof_ryu.c.o)
+                0x0200b410                __atof_engine
  .text.mulShiftAll64
-                0x0200b55e      0x1ea /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_dtoa_ryu.c.o)
- .text.div10    0x0200b748       0x28 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_dtoa_ryu.c.o)
+                0x0200b532      0x1ea /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_dtoa_ryu.c.o)
+ .text.div10    0x0200b71c       0x28 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_dtoa_ryu.c.o)
  .text.__dtoa_engine
-                0x0200b770      0x494 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_dtoa_ryu.c.o)
-                0x0200b770                __dtoa_engine
+                0x0200b744      0x494 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_dtoa_ryu.c.o)
+                0x0200b744                __dtoa_engine
  .text.mulShift32
-                0x0200bc04       0x4e /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_ryu_divpow2.c.o)
+                0x0200bbd8       0x4e /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_ryu_divpow2.c.o)
  .text.__mulPow5InvDivPow2
-                0x0200bc52       0x2c /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_ryu_divpow2.c.o)
-                0x0200bc52                __mulPow5InvDivPow2
+                0x0200bc26       0x2c /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_ryu_divpow2.c.o)
+                0x0200bc26                __mulPow5InvDivPow2
  .text.__mulPow5divPow2
-                0x0200bc7e       0x24 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_ryu_divpow2.c.o)
-                0x0200bc7e                __mulPow5divPow2
- *fill*         0x0200bca2        0x2 ff
+                0x0200bc52       0x24 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_ryu_divpow2.c.o)
+                0x0200bc52                __mulPow5divPow2
+ *fill*         0x0200bc76        0x2 ff
  .text.__log10Pow2
-                0x0200bca4        0xc /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_ryu_log10.c.o)
-                0x0200bca4                __log10Pow2
+                0x0200bc78        0xc /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_ryu_log10.c.o)
+                0x0200bc78                __log10Pow2
  .text.__log10Pow5
-                0x0200bcb0        0xc /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_ryu_log10.c.o)
-                0x0200bcb0                __log10Pow5
+                0x0200bc84        0xc /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_ryu_log10.c.o)
+                0x0200bc84                __log10Pow5
  .text.__log2pow5
-                0x0200bcbc        0xc /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_ryu_log2pow5.c.o)
-                0x0200bcbc                __log2pow5
+                0x0200bc90        0xc /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_ryu_log2pow5.c.o)
+                0x0200bc90                __log2pow5
  .text.__ceil_log2pow5
-                0x0200bcc8       0x10 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_ryu_log2pow5.c.o)
-                0x0200bcc8                __ceil_log2pow5
+                0x0200bc9c       0x10 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_ryu_log2pow5.c.o)
+                0x0200bc9c                __ceil_log2pow5
  .text.__pow5bits
-                0x0200bcd8       0x10 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_ryu_pow5bits.c.o)
-                0x0200bcd8                __pow5bits
+                0x0200bcac       0x10 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_ryu_pow5bits.c.o)
+                0x0200bcac                __pow5bits
  .text.__pow5Factor
-                0x0200bce8       0x30 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_ryu_table.c.o)
-                0x0200bce8                __pow5Factor
+                0x0200bcbc       0x30 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_ryu_table.c.o)
+                0x0200bcbc                __pow5Factor
  .text.__double_computePow5
-                0x0200bd18      0x100 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_ryu_table.c.o)
-                0x0200bd18                __double_computePow5
+                0x0200bcec      0x100 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_ryu_table.c.o)
+                0x0200bcec                __double_computePow5
  .text.__double_computeInvPow5
-                0x0200be18      0x104 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_ryu_table.c.o)
-                0x0200be18                __double_computeInvPow5
+                0x0200bdec      0x104 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_ryu_table.c.o)
+                0x0200bdec                __double_computeInvPow5
  .text.__umul128
-                0x0200bf1c       0x74 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_ryu_umul128.c.o)
-                0x0200bf1c                __umul128
+                0x0200bef0       0x74 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_ryu_umul128.c.o)
+                0x0200bef0                __umul128
  .text.__shiftright128
-                0x0200bf90       0x2c /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_ryu_umul128.c.o)
-                0x0200bf90                __shiftright128
+                0x0200bf64       0x2c /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_ryu_umul128.c.o)
+                0x0200bf64                __shiftright128
  .text.__picolibc_non_atomic_exchange_ungetc
-                0x0200bfbc        0x8 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_exchange.c.o)
-                0x0200bfbc                __atomic_exchange_ungetc
-                0x0200bfbc                __picolibc_non_atomic_exchange_ungetc
+                0x0200bf90        0x8 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_exchange.c.o)
+                0x0200bf90                __atomic_exchange_ungetc
+                0x0200bf90                __picolibc_non_atomic_exchange_ungetc
  .text.__libc_fini_array
-                0x0200bfc4       0x3c /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_misc_fini.c.o)
-                0x0200bfc4                __libc_fini_array
- .text.getenv   0x0200c000        0xe /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_stdlib_getenv.c.o)
-                0x0200c000                getenv
- *fill*         0x0200c00e        0x2 ff
+                0x0200bf98       0x3c /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_misc_fini.c.o)
+                0x0200bf98                __libc_fini_array
+ .text.getenv   0x0200bfd4        0xe /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_stdlib_getenv.c.o)
+                0x0200bfd4                getenv
+ *fill*         0x0200bfe2        0x2 ff
  .text._findenv
-                0x0200c010       0x80 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_stdlib_getenv_r.c.o)
-                0x0200c010                _findenv
- .text.strnlen  0x0200c090       0x16 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_string_strnlen.c.o)
-                0x0200c090                strnlen
- *fill*         0x0200c0a6        0x2 ff
+                0x0200bfe4       0x80 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_stdlib_getenv_r.c.o)
+                0x0200bfe4                _findenv
+ .text.strnlen  0x0200c064       0x16 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_string_strnlen.c.o)
+                0x0200c064                strnlen
+ *fill*         0x0200c07a        0x2 ff
  .text.__gettzinfo
-                0x0200c0a8        0x8 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_time_gettzinfo.c.o)
-                0x0200c0a8                __gettzinfo
+                0x0200c07c        0x8 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_time_gettzinfo.c.o)
+                0x0200c07c                __gettzinfo
  .text.gmtime_r
-                0x0200c0b0      0x1ac /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_time_gmtime_r.c.o)
-                0x0200c0b0                gmtime_r
+                0x0200c084      0x1ac /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_time_gmtime_r.c.o)
+                0x0200c084                gmtime_r
  .text.__dtox_engine
-                0x0200c25c      0x140 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_dtox_engine.c.o)
-                0x0200c25c                __dtox_engine
- .text.fgetc    0x0200c39c       0x48 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_fgetc.c.o)
-                0x0200c39c                getc
-                0x0200c39c                fgetc
+                0x0200c230      0x140 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_dtox_engine.c.o)
+                0x0200c230                __dtox_engine
+ .text.fgetc    0x0200c370       0x48 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_fgetc.c.o)
+                0x0200c370                getc
+                0x0200c370                fgetc
  .text.__file_str_get
-                0x0200c3e4       0x16 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_filestrget.c.o)
-                0x0200c3e4                __file_str_get
- .text.fputc    0x0200c3fa       0x34 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_fputc.c.o)
-                0x0200c3fa                putc
-                0x0200c3fa                fputc
- .text.ungetc   0x0200c42e       0x3a /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_ungetc.c.o)
-                0x0200c42e                ungetc
+                0x0200c3b8       0x16 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_filestrget.c.o)
+                0x0200c3b8                __file_str_get
+ .text.fputc    0x0200c3ce       0x34 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_fputc.c.o)
+                0x0200c3ce                putc
+                0x0200c3ce                fputc
+ .text.ungetc   0x0200c402       0x3a /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_ungetc.c.o)
+                0x0200c402                ungetc
  .text.__picolibc_non_atomic_compare_exchange_ungetc
-                0x0200c468       0x16 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_compare_exchange.c.o)
-                0x0200c468                __picolibc_non_atomic_compare_exchange_ungetc
-                0x0200c468                __atomic_compare_exchange_ungetc
- *fill*         0x0200c47e        0x2 ff
+                0x0200c43c       0x16 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_compare_exchange.c.o)
+                0x0200c43c                __picolibc_non_atomic_compare_exchange_ungetc
+                0x0200c43c                __atomic_compare_exchange_ungetc
+ *fill*         0x0200c452        0x2 ff
  .text.gettimeofday
-                0x0200c480       0x1c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(syscalls.c.o)
-                0x0200c480                gettimeofday
- *fill*         0x0200c49c        0x4 ff
+                0x0200c454       0x1c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(syscalls.c.o)
+                0x0200c454                gettimeofday
  .text.gettimeofday.__stub
-                0x0200c4a0      0x100 linker stubs
+                0x0200c470      0x100 linker stubs
  *(EXCLUDE_FILE(*.twl*) .gnu.warning)
  *(EXCLUDE_FILE(*.twl*) .gnu.linkonce.t*)
  *(.glue_7)
- .glue_7        0x0200c5b8        0x0 linker stubs
+ .glue_7        0x0200c588        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x0200c5b8        0x0 linker stubs
-                0x0200c5b8                        . = ALIGN (0x4)
+ .glue_7t       0x0200c588        0x0 linker stubs
+                0x0200c588                        . = ALIGN (0x4)
 
-.vfp11_veneer   0x0200c5b8        0x0
- .vfp11_veneer  0x0200c5b8        0x0 linker stubs
+.vfp11_veneer   0x0200c588        0x0
+ .vfp11_veneer  0x0200c588        0x0 linker stubs
 
-.v4_bx          0x0200c5b8        0x0
- .v4_bx         0x0200c5b8        0x0 linker stubs
+.v4_bx          0x0200c588        0x0
+ .v4_bx         0x0200c588        0x0 linker stubs
 
-.iplt           0x0200c5b8        0x0
- .iplt          0x0200c5b8        0x0 build/source/main.c.o
+.iplt           0x0200c588        0x0
+ .iplt          0x0200c588        0x0 build/source/main.c.o
 
 .fini
  *(.fini)
-                0x0200c5b8                        __text_end = .
+                0x0200c588                        __text_end = .
 
-.rodata         0x0200c5b8      0xa8c
+.rodata         0x0200c588      0xa8c
  *(EXCLUDE_FILE(*.twl*) .rodata)
- .rodata        0x0200c5b8       0x14 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fatfs.c.o)
- .rodata        0x0200c5cc       0x18 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_time_month_lengths.c.o)
-                0x0200c5cc                __month_lengths
- .rodata        0x0200c5e4        0xb /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_vfscanf.c.o)
- *fill*         0x0200c5ef        0x1 ff
- .rodata        0x0200c5f0      0x338 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_ryu_table.c.o)
+ .rodata        0x0200c588       0x14 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fatfs.c.o)
+ .rodata        0x0200c59c       0x18 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_time_month_lengths.c.o)
+                0x0200c59c                __month_lengths
+ .rodata        0x0200c5b4        0xb /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_vfscanf.c.o)
+ *fill*         0x0200c5bf        0x1 ff
+ .rodata        0x0200c5c0      0x338 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_ryu_table.c.o)
  *all.rodata*(*)
  *(EXCLUDE_FILE(*.twl*) .roda)
  *(EXCLUDE_FILE(*.twl*) .rodata.*)
  .rodata.initOBD.str1.4
-                0x0200c928      0x14c build/source/main.c.o
+                0x0200c8f8      0x14c build/source/main.c.o
                                  0x9e (size before relaxing)
  .rodata.main.str1.4
-                0x0200ca74       0x64 build/source/main.c.o
+                0x0200ca44       0x64 build/source/main.c.o
  .rodata.Wifi_AssocStatus
-                0x0200ca74       0x14 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
+                0x0200ca44       0x14 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
  .rodata.sgIP_DHCP_Init.str1.4
-                0x0200ca88        0xb /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
+                0x0200ca58        0xb /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
  .rodata.sgIP_DHCP_BeginDgram.str1.4
-                0x0200ca88        0x9 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
+                0x0200ca58        0x9 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
  .rodata.sgIP_TCP_Timer
-                0x0200ca88       0x24 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
+                0x0200ca58       0x24 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
  .rodata.sgIP_TCP_ReceivePacket
-                0x0200caac       0x48 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
+                0x0200ca7c       0x48 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
  .rodata.con_write.str1.4
-                0x0200caf4       0x30 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(console.c.o)
+                0x0200cac4       0x30 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(console.c.o)
  .rodata.con_write
-                0x0200caf4       0xd4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(console.c.o)
+                0x0200cac4       0xd4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(console.c.o)
  .rodata.stderr
-                0x0200cbc8        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(iob.c.o)
-                0x0200cbc8                stderr
+                0x0200cb98        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(iob.c.o)
+                0x0200cb98                stderr
  .rodata.stdout
-                0x0200cbcc        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(iob.c.o)
-                0x0200cbcc                stdout
+                0x0200cb9c        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(iob.c.o)
+                0x0200cb9c                stdout
  .rodata.default_fontTiles
-                0x0200cbd0      0x300 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(default_font.png.o)
-                0x0200cbd0                default_fontTiles
+                0x0200cba0      0x300 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(default_font.png.o)
+                0x0200cba0                default_fontTiles
  .rodata.SIN_LUT
-                0x0200ced0      0x102 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(trig.c.o)
-                0x0200ced0                SIN_LUT
+                0x0200cea0      0x102 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(trig.c.o)
+                0x0200cea0                SIN_LUT
  .rodata.str1.1
-                0x0200cfd2       0x70 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_time_tzset.c.o)
+                0x0200cfa2       0x70 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_time_tzset.c.o)
                                  0x61 (size before relaxing)
  .rodata.str1.1
-                0x0200d042        0x4 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_time_tzvars.c.o)
+                0x0200d012        0x4 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_time_tzvars.c.o)
  .rodata.str1.1
-                0x0200d042        0xf /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_vfprintf.c.o)
+                0x0200d012        0xf /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_vfprintf.c.o)
  .rodata.str1.1
-                0x0200d042       0x13 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_vfscanf.c.o)
+                0x0200d012       0x13 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_tinystdio_vfscanf.c.o)
  *(EXCLUDE_FILE(*.twl*) .gnu.linkonce.r*)
-                0x0200d058                        . = ALIGN (0x4)
- *fill*         0x0200d042        0x2 ff
+                0x0200d028                        . = ALIGN (0x4)
+ *fill*         0x0200d012        0x2 ff
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0200d044                        __exidx_start = .
+                0x0200d014                        __exidx_start = .
 
-ARM.exidx       0x0200d044        0x8
+ARM.exidx       0x0200d014        0x8
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
- .ARM.exidx     0x0200d044        0x8 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/thumb/arm7tdmi/libgcc.a(_udivmoddi4.o)
-                0x0200d04c                        __exidx_end = .
-                0x0200d04c                        . = ALIGN (0x4)
-                0x0200d04c                        PROVIDE (__preinit_array_start = .)
+ .ARM.exidx     0x0200d014        0x8 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/thumb/arm7tdmi/libgcc.a(_udivmoddi4.o)
+                0x0200d01c                        __exidx_end = .
+                0x0200d01c                        . = ALIGN (0x4)
+                0x0200d01c                        PROVIDE (__preinit_array_start = .)
 
 .preinit_array
  *(.preinit_array)
-                0x0200d04c                        PROVIDE (__preinit_array_end = .)
-                0x0200d04c                        PROVIDE (__init_array_start = .)
+                0x0200d01c                        PROVIDE (__preinit_array_end = .)
+                0x0200d01c                        PROVIDE (__init_array_start = .)
 
 .init_array
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array)
-                0x0200d04c                        PROVIDE (__init_array_end = .)
-                0x0200d04c                        PROVIDE (__fini_array_start = .)
+                0x0200d01c                        PROVIDE (__init_array_end = .)
+                0x0200d01c                        PROVIDE (__fini_array_start = .)
 
 .fini_array
  *(.fini_array)
  *(SORT_BY_NAME(.fini_array.*))
-                0x0200d04c                        PROVIDE (__fini_array_end = .)
+                0x0200d01c                        PROVIDE (__fini_array_end = .)
 
-.ctors          0x0200d04c        0x0
+.ctors          0x0200d01c        0x0
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT_BY_NAME(.ctors.*))
  *(.ctors)
-                0x0200d04c                        . = ALIGN (0x4)
+                0x0200d01c                        . = ALIGN (0x4)
 
-.dtors          0x0200d04c        0x0
+.dtors          0x0200d01c        0x0
  *crtbegin.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o) .dtors)
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
-                0x0200d04c                        . = ALIGN (0x4)
+                0x0200d01c                        . = ALIGN (0x4)
 
-.eh_frame       0x0200d04c        0x0
+.eh_frame       0x0200d01c        0x0
  *(.eh_frame)
-                0x0200d04c                        . = ALIGN (0x4)
+                0x0200d01c                        . = ALIGN (0x4)
 
 .gcc_except_table
-                0x0200d04c        0x0
+                0x0200d01c        0x0
  *(.gcc_except_table)
-                0x0200d04c                        . = ALIGN (0x4)
+                0x0200d01c                        . = ALIGN (0x4)
 
 .jcr
  *(.jcr)
 
-.got            0x0200d04c       0x10
+.got            0x0200d01c       0x10
  *(.got.plt)
- .got.plt       0x0200d04c        0xc build/source/main.c.o
-                0x0200d04c                _GLOBAL_OFFSET_TABLE_
+ .got.plt       0x0200d01c        0xc build/source/main.c.o
+                0x0200d01c                _GLOBAL_OFFSET_TABLE_
  *(.got)
- .got           0x0200d058        0x4 build/source/main.c.o
+ .got           0x0200d028        0x4 build/source/main.c.o
  *(.rel.got)
- .rel.got       0x0200d05c        0x0 build/source/main.c.o
+ .rel.got       0x0200d02c        0x0 build/source/main.c.o
 
-.ewram          0x0200d05c        0x0
-                0x0200d05c                        __ewram_start = ABSOLUTE (.)
+.ewram          0x0200d02c        0x0
+                0x0200d02c                        __ewram_start = ABSOLUTE (.)
  *(.ewram)
  *ewram.*(.text)
-                0x0200d05c                        . = ALIGN (0x4)
+                0x0200d02c                        . = ALIGN (0x4)
 
-.data           0x0200d05c      0x540
-                0x0200d05c                        __data_start = ABSOLUTE (.)
+.data           0x0200d02c      0x540
+                0x0200d02c                        __data_start = ABSOLUTE (.)
  *(EXCLUDE_FILE(*.twl*) .data)
- .data          0x0200d05c       0x28 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(mpu_setup.s.o)
- .data          0x0200d084      0x410 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(malloc-malloc.c.o)
-                0x0200d084                __malloc_sbrk_base
-                0x0200d088                __malloc_trim_threshold
-                0x0200d08c                __malloc_av_
- .data          0x0200d494        0x8 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_time_tzvars.c.o)
-                0x0200d494                _tzname
- .data          0x0200d49c        0x4 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_stdlib_environ.c.o)
-                0x0200d49c                environ
+ .data          0x0200d02c       0x28 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(mpu_setup.s.o)
+ .data          0x0200d054      0x410 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(malloc-malloc.c.o)
+                0x0200d054                __malloc_sbrk_base
+                0x0200d058                __malloc_trim_threshold
+                0x0200d05c                __malloc_av_
+ .data          0x0200d464        0x8 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_time_tzvars.c.o)
+                0x0200d464                _tzname
+ .data          0x0200d46c        0x4 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_stdlib_environ.c.o)
+                0x0200d46c                environ
  *(EXCLUDE_FILE(*.twl*) .data.*)
- .data.count    0x0200d4a0        0x1 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(keys.c.o)
- .data.repeat   0x0200d4a1        0x1 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(keys.c.o)
- .data.delay    0x0200d4a2        0x1 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(keys.c.o)
- *fill*         0x0200d4a3        0x1 ff
+ .data.count    0x0200d470        0x1 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(keys.c.o)
+ .data.repeat   0x0200d471        0x1 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(keys.c.o)
+ .data.delay    0x0200d472        0x1 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(keys.c.o)
+ *fill*         0x0200d473        0x1 ff
  .data.latchedArm7Buttons
-                0x0200d4a4        0x2 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(keys.c.o)
+                0x0200d474        0x2 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(keys.c.o)
  .data.receivedArm7Buttons
-                0x0200d4a6        0x2 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(keys.c.o)
+                0x0200d476        0x2 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(keys.c.o)
  .data.firstConsoleInit.0
-                0x0200d4a8        0x1 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(console.c.o)
- *fill*         0x0200d4a9        0x3 ff
+                0x0200d478        0x1 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(console.c.o)
+ *fill*         0x0200d479        0x3 ff
  .data.currentConsole
-                0x0200d4ac        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(console.c.o)
-                0x0200d4ac                currentConsole
+                0x0200d47c        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(console.c.o)
+                0x0200d47c                currentConsole
  .data.defaultConsole
-                0x0200d4b0       0x5c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(console.c.o)
-                0x0200d4b0                defaultConsole
+                0x0200d480       0x5c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(console.c.o)
+                0x0200d480                defaultConsole
  .data.__stderr
-                0x0200d50c       0x10 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(iob.c.o)
+                0x0200d4dc       0x10 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(iob.c.o)
  .data.__stdout
-                0x0200d51c       0x10 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(iob.c.o)
+                0x0200d4ec       0x10 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(iob.c.o)
  .data.fifo_freewords
-                0x0200d52c        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
+                0x0200d4fc        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
  .data.fifo_receive_queue
-                0x0200d530        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
+                0x0200d500        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
  .data.fifo_send_queue
-                0x0200d534        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
+                0x0200d504        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
  .data.fifo_buffer_free
-                0x0200d538        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
+                0x0200d508        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
  .data.bgTransform
-                0x0200d53c       0x20 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(background.c.o)
-                0x0200d53c                bgTransform
+                0x0200d50c       0x20 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(background.c.o)
+                0x0200d50c                bgTransform
  .data.bgScrollTable
-                0x0200d55c       0x20 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(background.c.o)
-                0x0200d55c                bgScrollTable
+                0x0200d52c       0x20 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(background.c.o)
+                0x0200d52c                bgScrollTable
  .data.bgControl
-                0x0200d57c       0x20 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(background.c.o)
-                0x0200d57c                bgControl
+                0x0200d54c       0x20 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(background.c.o)
+                0x0200d54c                bgControl
  *(EXCLUDE_FILE(*.twl*) .gnu.linkonce.d*)
-                0x0200d59c                        . = ALIGN (0x4)
+                0x0200d56c                        . = ALIGN (0x4)
 
-.igot.plt       0x0200d59c        0x0
- .igot.plt      0x0200d59c        0x0 build/source/main.c.o
+.igot.plt       0x0200d56c        0x0
+ .igot.plt      0x0200d56c        0x0 build/source/main.c.o
 
-.tdata          0x0200d59c        0x0
-                0x0200d59c                        __tdata_start = ABSOLUTE (.)
+.tdata          0x0200d56c        0x0
+                0x0200d56c                        __tdata_start = ABSOLUTE (.)
  *(.tdata .tdata.* .gnu.linkonce.td.*)
-                0x0200d59c                        . = ALIGN (0x4)
-                0x0200d59c                        __tdata_end = ABSOLUTE (.)
-                0x0200d59c                        __data_end = .
+                0x0200d56c                        . = ALIGN (0x4)
+                0x0200d56c                        __tdata_end = ABSOLUTE (.)
+                0x0200d56c                        __data_end = .
                 0x00000000                        __tdata_size = (__tdata_end - __tdata_start)
 
-.tbss           0x0200d59c       0x28
-                0x0200d59c                        __tbss_start = ABSOLUTE (.)
+.tbss           0x0200d56c       0x28
+                0x0200d56c                        __tbss_start = ABSOLUTE (.)
  *(.tbss .tbss.* .gnu.linkonce.tb.*)
- .tbss          0x0200d59c        0x4 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_errno_errno.c.o)
-                0x0200d59c                errno
- .tbss          0x0200d5a0       0x24 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_time_lcltime_buf.c.o)
-                0x0200d5a0                _localtime_buf
+ .tbss          0x0200d56c        0x4 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_errno_errno.c.o)
+                0x0200d56c                errno
+ .tbss          0x0200d570       0x24 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_time_lcltime_buf.c.o)
+                0x0200d570                _localtime_buf
  *(.tcommon)
-                0x0200d5c4                        . = ALIGN (0x4)
-                0x0200d5c4                        __tbss_end = ABSOLUTE (.)
+                0x0200d594                        . = ALIGN (0x4)
+                0x0200d594                        __tbss_end = ABSOLUTE (.)
                 0x00000028                        __tbss_size = (__tbss_end - __tbss_start)
-                0x0200d59c                        __bss_vma = .
+                0x0200d56c                        __bss_vma = .
 
-.dtcm           0x02ff0000        0x0 load address 0x0200d59c
-                0x0200d59c                        __dtcm_lma = LOADADDR (.dtcm)
+.dtcm           0x02ff0000        0x0 load address 0x0200d56c
+                0x0200d56c                        __dtcm_lma = LOADADDR (.dtcm)
                 0x02ff0000                        __dtcm_start = ABSOLUTE (.)
  *(.dtcm)
  *(.dtcm.*)
                 0x02ff0000                        . = ALIGN (0x4)
                 0x02ff0000                        __dtcm_end = ABSOLUTE (.)
 
-.itcm           0x01000100      0x26c load address 0x0200d59c
-                0x0200d59c                        __itcm_lma = LOADADDR (.itcm)
+.itcm           0x01000100      0x26c load address 0x0200d56c
+                0x0200d56c                        __itcm_lma = LOADADDR (.itcm)
                 0x01000100                        __itcm_start = ABSOLUTE (.)
  *(.itcm)
  *(.itcm.*)
@@ -2954,8 +2953,8 @@ ARM.exidx       0x0200d044        0x8
                 0x0100036c                        . = ALIGN (0x4)
                 0x0100036c                        __itcm_end = ABSOLUTE (.)
 
-.vectors        0x01000000        0x0 load address 0x0200d808
-                0x0200d808                        __vectors_lma = LOADADDR (.vectors)
+.vectors        0x01000000        0x0 load address 0x0200d7d8
+                0x0200d7d8                        __vectors_lma = LOADADDR (.vectors)
                 0x01000000                        __vectors_start = ABSOLUTE (.)
  *(.vectors .vectors.*)
                 0x01000000                        . = ALIGN (0x4)
@@ -2970,300 +2969,300 @@ ARM.exidx       0x0200d044        0x8
                 0x02ff0004                        . = ALIGN (0x4)
                 0x02ff0004                        __sbss_end = ABSOLUTE (.)
 
-.bss            0x0200d59c     0x1c60
-                0x0200d59c                        __bss_start = ABSOLUTE (.)
-                0x0200d59c                        __bss_start__ = ABSOLUTE (.)
+.bss            0x0200d56c     0x1c60
+                0x0200d56c                        __bss_start = ABSOLUTE (.)
+                0x0200d56c                        __bss_start__ = ABSOLUTE (.)
  *(EXCLUDE_FILE(*.twl*) .dynbss)
  *(EXCLUDE_FILE(*.twl*) .gnu.linkonce.b*)
  *(EXCLUDE_FILE(*.twl*) .bss*)
  .bss.wifi_connect_point
-                0x0200d59c       0x58 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
-                0x0200d59c                wifi_connect_point
+                0x0200d56c       0x58 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
+                0x0200d56c                wifi_connect_point
  .bss.wifi_connect_state
-                0x0200d5f4        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
-                0x0200d5f4                wifi_connect_state
+                0x0200d5c4        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
+                0x0200d5c4                wifi_connect_state
  .bss.synchandler
-                0x0200d5f8        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
-                0x0200d5f8                synchandler
+                0x0200d5c8        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
+                0x0200d5c8                synchandler
  .bss.packethandler
-                0x0200d5fc        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
-                0x0200d5fc                packethandler
- .bss.WifiData  0x0200d600        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
-                0x0200d600                WifiData
+                0x0200d5cc        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
+                0x0200d5cc                packethandler
+ .bss.WifiData  0x0200d5d0        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
+                0x0200d5d0                WifiData
  .bss.Wifi_Data_Struct
-                0x0200d604        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
-                0x0200d604                Wifi_Data_Struct
+                0x0200d5d4        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
+                0x0200d5d4                Wifi_Data_Struct
  .bss.wHeapFirst
-                0x0200d608        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
-                0x0200d608                wHeapFirst
+                0x0200d5d8        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
+                0x0200d5d8                wHeapFirst
  .bss.wHeapStart
-                0x0200d60c        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
-                0x0200d60c                wHeapStart
- .bss.wifi_hw   0x0200d610        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
-                0x0200d610                wifi_hw
+                0x0200d5dc        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
+                0x0200d5dc                wHeapStart
+ .bss.wifi_hw   0x0200d5e0        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(wifi_arm9.c.o)
+                0x0200d5e0                wifi_hw
  .bss.socketlist
-                0x0200d614      0x100 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_sockets.c.o)
-                0x0200d614                socketlist
+                0x0200d5e4      0x100 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_sockets.c.o)
+                0x0200d5e4                socketlist
  .bss.dhcp_serverip
-                0x0200d714        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
-                0x0200d714                dhcp_serverip
+                0x0200d6e4        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
+                0x0200d6e4                dhcp_serverip
  .bss.dhcp_rcvd_dns
-                0x0200d718        0xc /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
-                0x0200d718                dhcp_rcvd_dns
+                0x0200d6e8        0xc /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
+                0x0200d6e8                dhcp_rcvd_dns
  .bss.dhcp_rcvd_snmask
-                0x0200d724        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
-                0x0200d724                dhcp_rcvd_snmask
+                0x0200d6f4        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
+                0x0200d6f4                dhcp_rcvd_snmask
  .bss.dhcp_rcvd_gateway
-                0x0200d728        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
-                0x0200d728                dhcp_rcvd_gateway
+                0x0200d6f8        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
+                0x0200d6f8                dhcp_rcvd_gateway
  .bss.dhcp_rcvd_ip
-                0x0200d72c        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
-                0x0200d72c                dhcp_rcvd_ip
+                0x0200d6fc        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
+                0x0200d6fc                dhcp_rcvd_ip
  .bss.dhcp_state
-                0x0200d730        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
-                0x0200d730                dhcp_state
+                0x0200d700        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
+                0x0200d700                dhcp_state
  .bss.dhcp_status
-                0x0200d734        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
-                0x0200d734                dhcp_status
+                0x0200d704        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
+                0x0200d704                dhcp_status
  .bss.dhcp_requestDNS
-                0x0200d738        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
-                0x0200d738                dhcp_requestDNS
+                0x0200d708        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
+                0x0200d708                dhcp_requestDNS
  .bss.dhcp_optionptr
-                0x0200d73c        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
-                0x0200d73c                dhcp_optionptr
- .bss.dhcp_int  0x0200d740        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
-                0x0200d740                dhcp_int
- .bss.dhcp_p    0x0200d744        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
-                0x0200d744                dhcp_p
+                0x0200d70c        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
+                0x0200d70c                dhcp_optionptr
+ .bss.dhcp_int  0x0200d710        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
+                0x0200d710                dhcp_int
+ .bss.dhcp_p    0x0200d714        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
+                0x0200d714                dhcp_p
  .bss.dhcp_timelastaction
-                0x0200d748        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
-                0x0200d748                dhcp_timelastaction
+                0x0200d718        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
+                0x0200d718                dhcp_timelastaction
  .bss.dhcp_timestart
-                0x0200d74c        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
-                0x0200d74c                dhcp_timestart
- .bss.dhcp_tid  0x0200d750        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
-                0x0200d750                dhcp_tid
+                0x0200d71c        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
+                0x0200d71c                dhcp_timestart
+ .bss.dhcp_tid  0x0200d720        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
+                0x0200d720                dhcp_tid
  .bss.dhcp_hostname
-                0x0200d754       0x40 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
-                0x0200d754                dhcp_hostname
+                0x0200d724       0x40 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
+                0x0200d724                dhcp_hostname
  .bss.dhcp_socket
-                0x0200d794        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
-                0x0200d794                dhcp_socket
+                0x0200d764        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DHCP.c.o)
+                0x0200d764                dhcp_socket
  .bss.dnsrecords
-                0x0200d798       0x40 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DNS.c.o)
-                0x0200d798                dnsrecords
+                0x0200d768       0x40 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DNS.c.o)
+                0x0200d768                dnsrecords
  .bss.time_count
-                0x0200d7d8        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DNS.c.o)
-                0x0200d7d8                time_count
- .bss.dns_sock  0x0200d7dc        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DNS.c.o)
-                0x0200d7dc                dns_sock
+                0x0200d7a8        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DNS.c.o)
+                0x0200d7a8                time_count
+ .bss.dns_sock  0x0200d7ac        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_DNS.c.o)
+                0x0200d7ac                dns_sock
  .bss.numsynlist
-                0x0200d7e0        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
-                0x0200d7e0                numsynlist
- .bss.synlist   0x0200d7e4      0x800 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
-                0x0200d7e4                synlist
- .bss.lasttime  0x0200dfe4        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
-                0x0200dfe4                lasttime
+                0x0200d7b0        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
+                0x0200d7b0                numsynlist
+ .bss.synlist   0x0200d7b4      0x800 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
+                0x0200d7b4                synlist
+ .bss.lasttime  0x0200dfb4        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
+                0x0200dfb4                lasttime
  .bss.port_counter
-                0x0200dfe8        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
-                0x0200dfe8                port_counter
+                0x0200dfb8        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
+                0x0200dfb8                port_counter
  .bss.tcprecords
-                0x0200dfec        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
-                0x0200dfec                tcprecords
+                0x0200dfbc        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_TCP.c.o)
+                0x0200dfbc                tcprecords
  .bss.udpport_counter
-                0x0200dff0        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_UDP.c.o)
-                0x0200dff0                udpport_counter
+                0x0200dfc0        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_UDP.c.o)
+                0x0200dfc0                udpport_counter
  .bss.udprecords
-                0x0200dff4        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_UDP.c.o)
-                0x0200dff4                udprecords
+                0x0200dfc4        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_UDP.c.o)
+                0x0200dfc4                udprecords
  .bss.HWInterfaces
-                0x0200dff8       0x30 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_Hub.c.o)
-                0x0200dff8                HWInterfaces
+                0x0200dfc8       0x30 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_Hub.c.o)
+                0x0200dfc8                HWInterfaces
  .bss.ProtocolInterfaces
-                0x0200e028        0x8 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_Hub.c.o)
-                0x0200e028                ProtocolInterfaces
+                0x0200dff8        0x8 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_Hub.c.o)
+                0x0200dff8                ProtocolInterfaces
  .bss.NumProtocolInterfaces
-                0x0200e030        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_Hub.c.o)
-                0x0200e030                NumProtocolInterfaces
+                0x0200e000        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_Hub.c.o)
+                0x0200e000                NumProtocolInterfaces
  .bss.NumHWInterfaces
-                0x0200e034        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_Hub.c.o)
-                0x0200e034                NumHWInterfaces
+                0x0200e004        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_Hub.c.o)
+                0x0200e004                NumHWInterfaces
  .bss.ArpRecords
-                0x0200e038      0x400 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_ARP.c.o)
-                0x0200e038                ArpRecords
+                0x0200e008      0x400 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_ARP.c.o)
+                0x0200e008                ArpRecords
  .bss.count_1000ms
-                0x0200e438        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP.c.o)
-                0x0200e438                count_1000ms
+                0x0200e408        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP.c.o)
+                0x0200e408                count_1000ms
  .bss.count_100ms
-                0x0200e43c        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP.c.o)
-                0x0200e43c                count_100ms
+                0x0200e40c        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP.c.o)
+                0x0200e40c                count_100ms
  .bss.sgIP_timems
-                0x0200e440        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP.c.o)
-                0x0200e440                sgIP_timems
+                0x0200e410        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP.c.o)
+                0x0200e410                sgIP_timems
  .bss.idnum_count
-                0x0200e444        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_IP.c.o)
-                0x0200e444                idnum_count
+                0x0200e414        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/lib/libdswifi9.a(sgIP_IP.c.o)
+                0x0200e414                idnum_count
  .bss.keysrepeat
-                0x0200e448        0x2 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(keys.c.o)
- .bss.keysold   0x0200e44a        0x2 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(keys.c.o)
- .bss.keys      0x0200e44c        0x2 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(keys.c.o)
- *fill*         0x0200e44e        0x2 
+                0x0200e418        0x2 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(keys.c.o)
+ .bss.keysold   0x0200e41a        0x2 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(keys.c.o)
+ .bss.keys      0x0200e41c        0x2 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(keys.c.o)
+ *fill*         0x0200e41e        0x2 
  .bss.latchedTouchPosition
-                0x0200e450        0xc /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(keys.c.o)
+                0x0200e420        0xc /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(keys.c.o)
  .bss.receivedTouchPosition
-                0x0200e45c        0xc /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(keys.c.o)
+                0x0200e42c        0xc /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(keys.c.o)
  .bss.punixTime
-                0x0200e468        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(initSystem.c.o)
-                0x0200e468                punixTime
+                0x0200e438        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(initSystem.c.o)
+                0x0200e438                punixTime
  .bss.__debugger_unit
-                0x0200e46c        0x1 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(initSystem.c.o)
-                0x0200e46c                __debugger_unit
+                0x0200e43c        0x1 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(initSystem.c.o)
+                0x0200e43c                __debugger_unit
  .bss.__dsimode
-                0x0200e46d        0x1 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(initSystem.c.o)
-                0x0200e46d                __dsimode
- *fill*         0x0200e46e        0x2 
+                0x0200e43d        0x1 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(initSystem.c.o)
+                0x0200e43d                __dsimode
+ *fill*         0x0200e43e        0x2 
  .bss.libnds_stderr_write
-                0x0200e470        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(console.c.o)
-                0x0200e470                libnds_stderr_write
+                0x0200e440        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(console.c.o)
+                0x0200e440                libnds_stderr_write
  .bss.libnds_stdout_write
-                0x0200e474        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(console.c.o)
-                0x0200e474                libnds_stdout_write
+                0x0200e444        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(console.c.o)
+                0x0200e444                libnds_stdout_write
  .bss.currentCopy
-                0x0200e478       0x5c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(console.c.o)
-                0x0200e478                currentCopy
+                0x0200e448       0x5c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(console.c.o)
+                0x0200e448                currentCopy
  .bss.selected_entry.0
-                0x0200e4d4        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(cache.c.o)
+                0x0200e4a4        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(cache.c.o)
  .bss.dldi_stub_space_sectors
-                0x0200e4d8        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(cache.c.o)
+                0x0200e4a8        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(cache.c.o)
  .bss.cache_num_sectors
-                0x0200e4dc        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(cache.c.o)
+                0x0200e4ac        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(cache.c.o)
  .bss.cache_mem
-                0x0200e4e0        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(cache.c.o)
+                0x0200e4b0        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(cache.c.o)
  .bss.cache_entries
-                0x0200e4e4        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(cache.c.o)
+                0x0200e4b4        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(cache.c.o)
  .bss.stderr_buf_len
-                0x0200e4e8        0x2 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(iob.c.o)
+                0x0200e4b8        0x2 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(iob.c.o)
  .bss.stdout_buf_len
-                0x0200e4ea        0x2 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(iob.c.o)
+                0x0200e4ba        0x2 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(iob.c.o)
  .bss.stderr_buf
-                0x0200e4ec       0x11 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(iob.c.o)
- *fill*         0x0200e4fd        0x3 
+                0x0200e4bc       0x11 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(iob.c.o)
+ *fill*         0x0200e4cd        0x3 
  .bss.stdout_buf
-                0x0200e500       0x11 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(iob.c.o)
- *fill*         0x0200e511        0x3 
+                0x0200e4d0       0x11 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(iob.c.o)
+ *fill*         0x0200e4e1        0x3 
  .bss.fifo_mutex
-                0x0200e514       0x40 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
+                0x0200e4e4       0x40 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
  .bss.processing
-                0x0200e554        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
+                0x0200e524        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
  .bss.fifo_datamsg_data
-                0x0200e558       0x40 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
+                0x0200e528       0x40 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
  .bss.fifo_value32_data
-                0x0200e598       0x40 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
+                0x0200e568       0x40 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
  .bss.fifo_address_data
-                0x0200e5d8       0x40 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
+                0x0200e5a8       0x40 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
  .bss.fifo_datamsg_func
-                0x0200e618       0x40 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
+                0x0200e5e8       0x40 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
  .bss.fifo_value32_func
-                0x0200e658       0x40 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
+                0x0200e628       0x40 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
  .bss.fifo_address_func
-                0x0200e698       0x40 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
+                0x0200e668       0x40 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
  .bss.fifo_value32_queue
-                0x0200e6d8       0x40 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
+                0x0200e6a8       0x40 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
  .bss.fifo_data_queue
-                0x0200e718       0x40 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
+                0x0200e6e8       0x40 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
  .bss.fifo_address_queue
-                0x0200e758       0x40 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
+                0x0200e728       0x40 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
  .bss.fifo_buffer
-                0x0200e798      0x800 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
+                0x0200e768      0x800 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(fifosystem.c.o)
  .bss.heap_start.0
-                0x0200ef98        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(sbrk.c.o)
+                0x0200ef68        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(sbrk.c.o)
  .bss.fake_heap_start
-                0x0200ef9c        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(sbrk.c.o)
-                0x0200ef9c                fake_heap_start
+                0x0200ef6c        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(sbrk.c.o)
+                0x0200ef6c                fake_heap_start
  .bss.fake_heap_end
-                0x0200efa0        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(sbrk.c.o)
-                0x0200efa0                fake_heap_end
+                0x0200ef70        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(sbrk.c.o)
+                0x0200ef70                fake_heap_end
  .bss.main_args
-                0x0200efa4        0x8 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(threads.c.o)
- .bss.__tls     0x0200efac        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(threads.c.o)
-                0x0200efac                __tls
+                0x0200ef74        0x8 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(threads.c.o)
+ .bss.__tls     0x0200ef7c        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(threads.c.o)
+                0x0200ef7c                __tls
  .bss.cothread_list
-                0x0200efb0       0x1c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(threads.c.o)
+                0x0200ef80       0x1c /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(threads.c.o)
  .bss.cothread_active_thread
-                0x0200efcc        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(threads.c.o)
- .bss.free_fn   0x0200efd0        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(threads.c.o)
+                0x0200ef9c        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(threads.c.o)
+ .bss.free_fn   0x0200efa0        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(threads.c.o)
  .bss.bgIsTextLut
-                0x0200efd4        0x8 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(background.c.o)
-                0x0200efd4                bgIsTextLut
- .bss.bgState   0x0200efdc      0x140 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(background.c.o)
-                0x0200efdc                bgState
+                0x0200efa4        0x8 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(background.c.o)
+                0x0200efa4                bgIsTextLut
+ .bss.bgState   0x0200efac      0x140 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(background.c.o)
+                0x0200efac                bgState
  .bss.SDcallback
-                0x0200f11c        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(system.c.o)
- .bss.Mutex     0x0200f120        0xc /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(ffsystem.c.o)
- .bss.fs_io     0x0200f12c        0x8 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(diskio.c.o)
+                0x0200f0ec        0x4 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(system.c.o)
+ .bss.Mutex     0x0200f0f0        0xc /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(ffsystem.c.o)
+ .bss.fs_io     0x0200f0fc        0x8 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(diskio.c.o)
  .bss.fs_initialized
-                0x0200f134        0x2 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(diskio.c.o)
- *fill*         0x0200f136        0x2 
+                0x0200f104        0x2 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(diskio.c.o)
+ *fill*         0x0200f106        0x2 
  .bss.__lock___libc_recursive_mutex
-                0x0200f138       0x10 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(locks.c.o)
-                0x0200f138                __lock___libc_recursive_mutex
- .bss           0x0200f148       0x34 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(malloc-malloc.c.o)
-                0x0200f148                __malloc_top_pad
-                0x0200f14c                __malloc_current_mallinfo
-                0x0200f174                __malloc_max_sbrked_mem
-                0x0200f178                __malloc_max_total_mem
- .bss           0x0200f17c       0x18 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_time_tzset.c.o)
- .bss           0x0200f194        0x8 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_time_tzvars.c.o)
-                0x0200f194                _timezone
-                0x0200f198                _daylight
- *fill*         0x0200f19c        0x4 
- .bss           0x0200f1a0       0x58 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_time_gettzinfo.c.o)
- .bss           0x0200f1f8        0x4 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_stdlib_environ.c.o)
+                0x0200f108       0x10 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(locks.c.o)
+                0x0200f108                __lock___libc_recursive_mutex
+ .bss           0x0200f118       0x34 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(malloc-malloc.c.o)
+                0x0200f118                __malloc_top_pad
+                0x0200f11c                __malloc_current_mallinfo
+                0x0200f144                __malloc_max_sbrked_mem
+                0x0200f148                __malloc_max_total_mem
+ .bss           0x0200f14c       0x18 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_time_tzset.c.o)
+ .bss           0x0200f164        0x8 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_time_tzvars.c.o)
+                0x0200f164                _timezone
+                0x0200f168                _daylight
+ *fill*         0x0200f16c        0x4 
+ .bss           0x0200f170       0x58 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_time_gettzinfo.c.o)
+ .bss           0x0200f1c8        0x4 /opt/wonderful/toolchain/gcc-arm-none-eabi/lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb/arm7tdmi/libc.a(libc_stdlib_environ.c.o)
  *(EXCLUDE_FILE(*.twl*) COMMON)
-                0x0200f1fc                        . = ALIGN (0x4)
-                0x0200f1fc                        __bss_end__ = ABSOLUTE (.)
+                0x0200f1cc                        . = ALIGN (0x4)
+                0x0200f1cc                        __bss_end__ = ABSOLUTE (.)
 
-.tls            0x0200f1fc       0x28
-                0x0200f1fc                        __tls_start = ABSOLUTE (.)
-                0x0200f224                        . = ((. + __tdata_size) + __tbss_size)
- *fill*         0x0200f1fc       0x28 
-                0x0200f224                        __tls_end = ABSOLUTE (.)
-                0x0200f224                        __end__ = ABSOLUTE (.)
+.tls            0x0200f1cc       0x28
+                0x0200f1cc                        __tls_start = ABSOLUTE (.)
+                0x0200f1f4                        . = ((. + __tdata_size) + __tbss_size)
+ *fill*         0x0200f1cc       0x28 
+                0x0200f1f4                        __tls_end = ABSOLUTE (.)
+                0x0200f1f4                        __end__ = ABSOLUTE (.)
                 0x00000028                        __tls_size = (__tls_end - __tls_start)
 
-.twl            0x0200f224       0x38 load address 0x02400000
+.twl            0x0200f1f4       0x38 load address 0x02400000
                 0x02400000                        __arm9i_lma__ = LOADADDR (.twl)
-                0x0200f224                        __arm9i_start__ = ABSOLUTE (.)
+                0x0200f1f4                        __arm9i_start__ = ABSOLUTE (.)
  *(.twl)
  *(.twl.text .twl.text.*)
  *(.twl.rodata .twl.rodata.*)
  *(.twl.data .twl.data.*)
  *.twl*(.text .stub .text.* .gnu.linkonce.t.*)
  .text.sdmmc_GetDiskStatus
-                0x0200f224       0x38 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(sdmmc.twl.c.o)
-                0x0200f224                sdmmc_GetDiskStatus
+                0x0200f1f4       0x38 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/lib/libnds9.a(sdmmc.twl.c.o)
+                0x0200f1f4                sdmmc_GetDiskStatus
  *.twl*(.rodata)
  *.twl*(.roda)
  *.twl*(.rodata.*)
  *.twl*(.data)
  *.twl*(.data.*)
  *.twl*(.gnu.linkonce.d*)
-                0x0200f25c                        __arm9i_end__ = ABSOLUTE (.)
+                0x0200f22c                        __arm9i_end__ = ABSOLUTE (.)
 
-.rel.dyn        0x0200f25c        0x0 load address 0x02400038
- .rel.iplt      0x0200f25c        0x0 build/source/main.c.o
+.rel.dyn        0x0200f22c        0x0 load address 0x02400038
+ .rel.iplt      0x0200f22c        0x0 build/source/main.c.o
 
-.twl_bss        0x0200f25c        0x0
-                0x0200f25c                        __twl_bss_start__ = ABSOLUTE (.)
+.twl_bss        0x0200f22c        0x0
+                0x0200f22c                        __twl_bss_start__ = ABSOLUTE (.)
  *(.twl_bss .twl_bss.*)
  *(.twl.bss .twl.bss.*)
  *.twl*(.dynbss)
  *.twl*(.gnu.linkonce.b*)
  *.twl*(.bss*)
  *.twl*(COMMON)
-                0x0200f25c                        . = ALIGN (0x4)
-                0x0200f25c                        __twl_bss_end__ = ABSOLUTE (.)
-                0x0200f25c                        __twl_end__ = ABSOLUTE (.)
+                0x0200f22c                        . = ALIGN (0x4)
+                0x0200f22c                        __twl_bss_end__ = ABSOLUTE (.)
+                0x0200f22c                        __twl_end__ = ABSOLUTE (.)
 
 .stab
  *(.stab)
