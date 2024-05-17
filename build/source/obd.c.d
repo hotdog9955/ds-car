@@ -1,4 +1,7 @@
-build/source/main.c.o: source/main.c \
+build/source/obd.c.o: source/obd.c source/obd.h \
+ /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/include/netinet/in.h \
+ /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/include/sys/socket.h \
+ /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/include/netdb.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/bios.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/ndstypes.h \
@@ -57,7 +60,12 @@ build/source/main.c.o: source/main.c \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/teak/dsp.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/teak/fifo.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/teak/tlf.h \
- source/obd.h
+ /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/include/dswifi9.h \
+ /opt/wonderful/thirdparty/blocksds/core/libs/dswifi/include/dswifi_version.h
+source/obd.h:
+/opt/wonderful/thirdparty/blocksds/core/libs/dswifi/include/netinet/in.h:
+/opt/wonderful/thirdparty/blocksds/core/libs/dswifi/include/sys/socket.h:
+/opt/wonderful/thirdparty/blocksds/core/libs/dswifi/include/netdb.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/bios.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/ndstypes.h:
@@ -116,4 +124,5 @@ build/source/main.c.o: source/main.c \
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/teak/dsp.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/teak/fifo.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/teak/tlf.h:
-source/obd.h:
+/opt/wonderful/thirdparty/blocksds/core/libs/dswifi/include/dswifi9.h:
+/opt/wonderful/thirdparty/blocksds/core/libs/dswifi/include/dswifi_version.h:
