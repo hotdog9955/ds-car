@@ -31,11 +31,14 @@ int receiveUntilGreater(OBDSocket sock_fd, char *buffer, int buf_size) {
             printf("Socket closed by peer\n");
             break;
         }
-
-        buffer[received++] = ch;  // Store the character in the buffer
         if (ch == '>') {
             break;  // Stop if '>' is found
         }
+        if (ch == '\r') {
+            continue;
+        }
+        buffer[received++] = ch;  // Store the character in the buffer
+
     }
 
     buffer[received] = '\0';  // Null terminate the string
@@ -47,10 +50,10 @@ int receiveUntilGreater(OBDSocket sock_fd, char *buffer, int buf_size) {
 void dumpSockOutput(int s)
 {
     char *junkbuf[128];
-    recv(s, junkbuf, sizeof(junkbuf), 0);
+    receiveUntilGreater(s, junkbuf, 128);
 }
 
-
+// TODO
 int getSpeed(OBDSocket s){
     send(s, "010D\r", 6, 0);
     char buf[32];
@@ -82,6 +85,7 @@ int getRPM(OBDSocket s){
     return (A*256 + B)/4;
 };
 
+// TODO
 int getTemp(OBDSocket s){
     send(s, "0105\r", 6, 0);
     char buf[32];
