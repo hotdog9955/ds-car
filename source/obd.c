@@ -8,6 +8,40 @@
 #include "string.h"
 #include "stdio.h"
 
+void waitFrames(int frames){
+    for (size_t i = 0; i < frames; i++)
+    {
+        swiWaitForVBlank();
+    }
+}
+
+int receiveUntilGreater(OBDSocket sock_fd, char *buffer, int buf_size) {
+    char ch;
+    int received = 0;
+    ssize_t n;
+
+    while (received < buf_size - 1) {  // Reserve space for null terminator
+        n = recv(sock_fd, &ch, 1, 0);  // Receive one character at a time
+        if (n < 0) {
+            perror("Error reading from socket");
+            return -1;  // Return error code
+        }
+        if (n == 0) {
+            // No more data, socket probably closed
+            printf("Socket closed by peer\n");
+            break;
+        }
+
+        buffer[received++] = ch;  // Store the character in the buffer
+        if (ch == '>') {
+            break;  // Stop if '>' is found
+        }
+    }
+
+    buffer[received] = '\0';  // Null terminate the string
+    return received;  // Return number of characters received
+}
+
 
 // dumps the output of a socket
 void dumpSockOutput(int s)
@@ -28,15 +62,24 @@ int getSpeed(OBDSocket s){
     return (int)buf[3];
 }
 
+
+
+
+
 int getRPM(OBDSocket s){
     send(s, "010C\r", 6, 0);
+    waitFrames(30);
     char buf[32];
+    receiveUntilGreater(s, buf, 32);
     // check for errors
-    if (recv(s, buf, 32, 0) < 5)
-    {
-        return -1;
-    }
-    return ((int)buf[3]*256 + (int)buf[4])/4;
+    int A;
+    int B;
+    int _;
+    sscanf(buf, ">1 %*2x %2x %2x", &A, &B);
+
+
+    printf("%s\n", buf);
+    return (A*256 + B)/4;
 };
 
 int getTemp(OBDSocket s){
@@ -92,28 +135,30 @@ OBDSocket initOBD()
     send(s, "ATZ\r", 5, 0);
 
     // wait for 3 secs for it to reset
-    for (size_t i = 0; i < 60 * 3; i++)
-    {
-        swiWaitForVBlank();
-    }
+    waitFrames(60*3);
 
     // buffer for junk, output to this should not be used
     dumpSockOutput(s);
 
     // set elm327 to default settings
     send(s, "ATD\r", 5, 0);
+    waitFrames(30);
     dumpSockOutput(s);
 
     send(s, "ATE0\r", 6, 0);
+    waitFrames(30);
     dumpSockOutput(s);
 
     send(s, "ATAL\r", 6, 0);
+    waitFrames(30);
     dumpSockOutput(s);
 
     send(s, "ATSP0\r", 7, 0);
+    waitFrames(30);
     dumpSockOutput(s);
 
     send(s, "0100\r", 6, 0);
+    waitFrames(30);
     dumpSockOutput(s);
 
     return s;

@@ -18,16 +18,13 @@ int main(int argc, char *argv[])
     }
 
 
-    printf("engine RPM: %d", getRPM(s));
-    printf("\n");
-    printf("Press START to exit");
+    int rpm = getRPM(s);
+    
+    printf("engine RPM: %d\n", rpm);
 
     while (1)
     {
-        swiWaitForVBlank();
-        scanKeys();
-        if (keysHeld() & KEY_START)
-            break;
+        printf("%d\n",getRPM(s));
     }
 
     return 0;
