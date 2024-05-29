@@ -27,9 +27,8 @@ int receiveUntilGreater(OBDSocket sock_fd, char *buffer, int buf_size) {
             return -1;  // Return error code
         }
         if (n == 0) {
-            // No more data, socket probably closed
-            printf("Socket closed by peer\n");
-            break;
+            // No more data, socket probably closed TODO
+            continue;
         }
         if (ch == '>') {
             break;  // Stop if '>' is found
@@ -66,23 +65,16 @@ int getSpeed(OBDSocket s){
 }
 
 
-
-
-
 int getRPM(OBDSocket s){
     send(s, "010C\r", 6, 0);
-    waitFrames(30);
     char buf[32];
     receiveUntilGreater(s, buf, 32);
-    // check for errors
+    printf("%s\n", buf);
     int A;
     int B;
     int _;
-    sscanf(buf, ">1 %*2x %2x %2x", &A, &B);
-
-
-    printf("%s\n", buf);
-    return (A*256 + B)/4;
+    sscanf(buf, "%2x %2x %2x", &_, &A, &B);
+    return (256*A+B)/4;
 };
 
 // TODO
@@ -146,23 +138,25 @@ OBDSocket initOBD()
 
     // set elm327 to default settings
     send(s, "ATD\r", 5, 0);
-    waitFrames(30);
+    // waitFrames(30);
     dumpSockOutput(s);
 
+    // turn off command echoing
     send(s, "ATE0\r", 6, 0);
-    waitFrames(30);
+    // waitFrames(30);
     dumpSockOutput(s);
 
+    // allow messages longer than 8 bytes
     send(s, "ATAL\r", 6, 0);
-    waitFrames(30);
+    // waitFrames(30);
     dumpSockOutput(s);
 
+    // search for a compatible protocol
     send(s, "ATSP0\r", 7, 0);
-    waitFrames(30);
+    // waitFrames(30);
     dumpSockOutput(s);
-
     send(s, "0100\r", 6, 0);
-    waitFrames(30);
+    // waitFrames(30);
     dumpSockOutput(s);
 
     return s;
