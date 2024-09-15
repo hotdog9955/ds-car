@@ -8,6 +8,7 @@ build/source/main.c.o: source/main.c \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/cpu.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/cpu_asm.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/debug.h \
+ /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/decompress.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/dma.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/fifocommon.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/interrupts.h \
@@ -18,6 +19,7 @@ build/source/main.c.o: source/main.c \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/ndma.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/nwram.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/system.h \
+ /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/rsa.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/sha1.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/timers.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/touch.h \
@@ -34,7 +36,6 @@ build/source/main.c.o: source/main.c \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/trig_lut.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/camera.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/console.h \
- /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/decompress.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/exceptions.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/guitarGrip.h \
  /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/image.h \
@@ -67,6 +68,7 @@ build/source/main.c.o: source/main.c \
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/cpu.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/cpu_asm.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/debug.h:
+/opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/decompress.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/dma.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/fifocommon.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/interrupts.h:
@@ -77,6 +79,7 @@ build/source/main.c.o: source/main.c \
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/ndma.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/nwram.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/system.h:
+/opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/rsa.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/sha1.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/timers.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/touch.h:
@@ -93,7 +96,6 @@ build/source/main.c.o: source/main.c \
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/trig_lut.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/camera.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/console.h:
-/opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/decompress.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/exceptions.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/guitarGrip.h:
 /opt/wonderful/thirdparty/blocksds/core/libs/libnds/include/nds/arm9/image.h:

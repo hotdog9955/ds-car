@@ -10,16 +10,18 @@
 typedef int OBDSocket;
 
 // connects to and initializes the ELM327 and WIFI, returns a socket or -1 if failure.
-OBDSocket initOBD();
+OBDSocket initConnection();
 
-// Gets the speed of the connected vehicle, returns -1 if failure.
-int getSpeed(OBDSocket s);
 
-// Gets the RPM of the connected vehicle's engine, returns -1 if failure.
-int getRPM(OBDSocket s);
+// initializes the ELM327 to the format i want
+int initELM(OBDSocket socket_fd);
 
-// Gets the coolant temperature, returns -50 on error.
-int getTemp(OBDSocket s);
+void testELM(OBDSocket socket_fd, char* buffer);
 
+// buffer for storing input, static because ds stack is very short.
+#define BUF_LEN 1024
+
+// this buffer is used for constructing requests and recieving requests
+static char OBD_BUF[BUF_LEN];
 
 #endif
